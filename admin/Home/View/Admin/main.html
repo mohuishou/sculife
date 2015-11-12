@@ -1,0 +1,116 @@
+
+		<!-- content start -->
+		<div class="admin-content">
+
+			<div class="am-cf am-padding">
+				<div class="am-fl am-cf">
+					<strong class="am-text-primary am-text-lg">首页</strong>
+					/
+					<small>最新公告</small>
+				</div>
+			</div>
+
+			<ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
+				<li>
+					<a href="#" class="am-text-success">
+						<span class="am-icon-btn am-icon-file-text-o"></span>
+						<br/>
+						青春川大
+						<br/>
+						{$count.youth}
+					</a>
+				</li>
+				<li>
+					<a href="#" class="am-text-warning">
+						<span class="am-icon-btn am-icon-pencil-square-o"></span>
+						<br/>
+						学工部
+						<br/>
+						{$count.xsc}
+					</a>
+				</li>
+				<li>
+					<a href="javascript:alert('正在建设中，尽请期待！')" class="am-text-danger">
+						<span class="am-icon-btn am-icon-bell-o"></span>
+						<br/>
+						教务处
+						<br/>
+						8082
+					</a>
+				</li>
+				<li>
+					<a href="javascript:alert('正在建设中，尽请期待！')" class="am-text-secondary">
+						<span class="am-icon-btn am-icon-circle-o"></span>
+						<br/>
+						更多
+						<br/>
+						3000
+					</a>
+				</li>
+			</ul>
+
+
+
+			<div class="am-g">
+				<div class="am-u-md-7" id="new-notice">
+					<div class="am-cf am-padding">
+						<div class="am-fl am-cf">
+							<strong class=am-text-lg">最近通知</strong>
+							/
+							<small>最近抓取到的通知</small>
+						</div>
+					</div>
+					<table class="am-table am-table-bordered am-table-radius am-table-hover am-table-centered">
+						<thead>
+							<tr>
+								<th>编号</th>
+								<th>标题</th>
+								<th>来源</th>
+								<th>分类</th>
+								<th>创建时间</th>
+							</tr>
+						</thead>
+						<volist name="someArticle" id="vo">
+							<tr>
+								<td>{$i}</td>
+								<td>{$vo.title}</td>
+								<td>{$vo.tag}</td>
+								<td>{$vo.category}</td>
+								<td>{$vo.ctime}</td>
+
+							</tr>
+						</volist>
+					</table>
+
+				</div>
+				<div class="am-u-md-5" id="some-log">
+					<div class="am-cf am-padding">
+						<div class="am-fl am-cf">
+							<strong class=am-text-lg">最近日志</strong>
+							/
+							<small>最近的操作日志</small>
+						</div>
+					</div>
+					<table class="am-table am-table-bordered am-table-radius am-table-hover am-table-centered">
+						<thead>
+						<tr>
+							<th>编号</th>
+							<th>操作</th>
+							<th>创建时间</th>
+						</tr>
+						</thead>
+						<volist name="someLog" id="vo">
+							<tr>
+								<td>{$i}</td>
+								<td>{$vo.message}</td>
+								<td>{$vo.ctime}</td>
+
+							</tr>
+						</volist>
+					</table>
+
+				</div>
+			</div>
+		</div>
+		<!-- content end -->
+

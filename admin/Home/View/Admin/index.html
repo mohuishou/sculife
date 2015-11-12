@@ -1,0 +1,19 @@
+<extend name="base" />
+<block name="header">
+	<include file="header" />
+</block>
+
+<block name="main">
+	<div class="am-cf admin-main">
+		<include file="sidebar" />
+	<switch name="Think.get.tag">
+		<case value="youth"><include file="article" sub="青春川大" /></case>
+		<case value="xsc"><include file="article" sub="学工部" /></case>
+		<case value="log"><include file="log" /></case>
+		<default /><include file="main" />
+	</switch>
+	</div>
+</block>
+<block name="footer">
+	<include file="footer" />
+</block>
