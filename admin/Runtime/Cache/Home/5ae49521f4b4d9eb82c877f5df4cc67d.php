@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html class="no-js">
   <head>
-      <title>前台-sculife|BY-艺林清森团队</title>
+      <title>sculife</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="description" content="川大公告牌|BY-艺林清森团队,最新最快最美的川大活动新闻速递">
@@ -12,7 +12,7 @@
       <meta name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
       <link rel="stylesheet" href="/Match/webDesign/Public/css/amazeui.min.css">
-      <link rel="stylesheet" href="/Match/webDesign/Public/css/admin.css">
+      <link rel="stylesheet" href="/Match/webDesign/Public/css/index.css">
       
   </head>
   <body>
@@ -25,6 +25,52 @@
   </p>
   <![endif]-->
       
+	<!--header开始-->
+<header >
+    <div class="header  am-topbar">
+        <div class="am-g am-g-fixed">
+            <h1 class="am-topbar-brand">
+                <a href="#">Amaze UI</a>
+            </h1>
+
+            <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+            <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+                <ul class="am-nav am-nav-pills am-topbar-nav">
+                    <li class="am-active"><a href="#">首页</a></li>
+                    <li><a href="#">项目</a></li>
+
+                </ul>
+
+                <div class="am-topbar-right">
+                    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">进入后台</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</header>
+<!--header结束-->
+	<!--slider开始-->
+<div class="slider ">
+    <div data-am-widget="slider" class="am-slider am-slider-c2" data-am-slider='{&quot;directionNav&quot;:false}' >
+        <ul class="am-slides">
+            <li>
+                <img src="/Match/webDesign/Public/img/banner-1.jpg">
+                <div class="am-slider-desc">远方 有一个地方 那里种有我们的梦想</div>
+            </li>
+            <li>
+                <img src="/Match/webDesign/Public/img/banner-2.jpg">
+                <div class="am-slider-desc">某天 也许会相遇 相遇在这个好地方</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--slider结束-->
+
+
 
       
       
@@ -49,7 +95,7 @@
       
 		<footer>
 		<hr>
-		<p class="am-padding-left">© 2015 SCULIFE,BY-艺林清森团队.</p>
+		<p class="am-padding-left am-text-center">© 2015 SCULIFE.</p>
 	</footer>
 	<a href="#" class="am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}">
 		<span class="am-icon-btn am-icon-th-list"></span>
