@@ -1,0 +1,32 @@
+<!-- content start -->
+<div class="admin-content">
+
+    <div class="am-cf am-padding">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">日志</strong> / <small>日志</small></div>
+    </div>
+
+    <div class="am-g">
+        <div class="am-u-md-12">
+            <table class="am-table am-table-bordered am-table-radius am-table-hover am-table-centered">
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>日志内容</th>
+                    <th>创建时间</th>
+                </tr>
+                </thead>
+                <volist name="list" id="vo">
+                    <tr>
+                        <td>{$i}</td>
+                        <td>{$vo.message}</td>
+                        <td>{$vo.ctime}</td>
+                    </tr>
+                </volist>
+            </table>
+            <div id="table-page">
+                {$page}
+            </div>
+            <p></p>
+        </div>
+    </div>
+</div>
