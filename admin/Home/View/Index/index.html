@@ -10,6 +10,8 @@
 <block name="main">
 	<php>if(I('id')){</php>
 		<include file="article" />
+	<php>}elseif(I('tag')){</php>
+		<include file="article-list" />
 	<php>}else{</php>
 		<include file="main" />
 	<php>}</php>

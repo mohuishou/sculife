@@ -24,4 +24,18 @@ class IndexController extends Controller{
         $this->assign('data',$data[0]);
         $this->display('index');
     }
+
+    public function notice($tag){
+        $handle=new HandleController();
+        $list=$handle->getAllNotice($tag);
+        $this->assign('list',$list);
+        $this->display('index');
+    }
+
+    public function news($tag){
+        $handle=new HandleController();
+        $list=$handle->getAllNews($tag);
+        $this->assign('list',$list);
+        $this->display('index');
+    }
 }
