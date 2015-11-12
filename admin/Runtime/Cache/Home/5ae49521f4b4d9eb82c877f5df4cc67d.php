@@ -11,8 +11,13 @@
       <meta name="mobile-web-app-capable" content="yes">
       <meta name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<<<<<<< HEAD
       <link rel="stylesheet" href="/Match/sculife/Public/css/amazeui.min.css">
       <link rel="stylesheet" href="/Match/sculife/Public/css/index.css">
+=======
+      <link rel="stylesheet" href="/Match/webDesign/Public/css/amazeui.min.css">
+      <link rel="stylesheet" href="/Match/webDesign/Public/css/index.css">
+>>>>>>> d338b48a60e35ef738596499a352cf0c50d10d0c
       
   </head>
   <body>
@@ -77,11 +82,19 @@
     <div data-am-widget="slider" class="am-slider am-slider-c2" data-am-slider='{&quot;directionNav&quot;:false}' >
         <ul class="am-slides">
             <li>
+<<<<<<< HEAD
                 <img src="/Match/sculife/Public/img/banner-1.jpg">
                 <div class="am-slider-desc">远方 有一个地方 那里种有我们的梦想</div>
             </li>
             <li>
                 <img src="/Match/sculife/Public/img/banner-2.jpg">
+=======
+                <img src="/Match/webDesign/Public/img/banner-1.jpg">
+                <div class="am-slider-desc">远方 有一个地方 那里种有我们的梦想</div>
+            </li>
+            <li>
+                <img src="/Match/webDesign/Public/img/banner-2.jpg">
+>>>>>>> d338b48a60e35ef738596499a352cf0c50d10d0c
                 <div class="am-slider-desc">某天 也许会相遇 相遇在这个好地方</div>
             </li>
         </ul>
@@ -211,15 +224,26 @@
 	<!--[if lt IE 9]>
 	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<<<<<<< HEAD
 	<script src="/Match/sculife/Public/js/amazeui.ie8polyfill.min.js"></script>
+=======
+	<script src="/Match/webDesign/Public/js/amazeui.ie8polyfill.min.js"></script>
+>>>>>>> d338b48a60e35ef738596499a352cf0c50d10d0c
 	<![endif]-->
 
 	<!--[if (gte IE 9)|!(IE)]>
 	<!-->
+<<<<<<< HEAD
 	<script src="/Match/sculife/Public/js/jquery.min.js"></script>
 	<!--<![endif]-->
 	<script src="/Match/sculife/Public/js/amazeui.min.js"></script>
 	<script src="/Match/sculife/Public/js/app.js"></script>
+=======
+	<script src="/Match/webDesign/Public/js/jquery.min.js"></script>
+	<!--<![endif]-->
+	<script src="/Match/webDesign/Public/js/amazeui.min.js"></script>
+	<script src="/Match/webDesign/Public/js/app.js"></script>
+>>>>>>> d338b48a60e35ef738596499a352cf0c50d10d0c
 
       
   </body>
