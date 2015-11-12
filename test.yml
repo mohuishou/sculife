@@ -1,6 +1,5 @@
 image: daocloud/ci-php:5.6
 services:
-    - mysql
     
 env:
     - MYENV = "hello"
@@ -20,5 +19,4 @@ script:
     - echo "Run test cases here"
     - echo ""
     - echo "Below shows how to use services, mongodb/mysql/redis are the service host name"
-    - ping -c 2 mysql
     
