@@ -5,11 +5,23 @@ html,body{
 header .header{
 	margin: 0;
 }
+
+a{
+	color: #333;
+	transition: 0.5s;
+}
+a:hover{
+	color: #0099CC;
+	transition: 0.5s;
+}
 .slider img{
 	max-height: 600px;
 }
 .list-tag{
 	text-align: right;
+}
+article{
+	margin-bottom: 20px;
 }
 .article-body{
 	border: 1px solid #ccc;
@@ -52,3 +64,11 @@ header .header{
 .am-panel{
 	margin-top: 20px;
 }
+ #go-top{
+ 	position:fixed;
+ 	right:25px;
+ 	bottom:25px;
+ 	index:9999;
+ 	
+ }
+

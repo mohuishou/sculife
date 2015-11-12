@@ -55,7 +55,7 @@
                         <ul class="am-dropdown-content">
                             <li class="am-dropdown-header">请选择类别</li>
                             <li><a href="<?php echo U('Index/notice?tag=xsc');?>">公告</a></li>
-                            <li><a href="<?php echo U('Index/news?tag=xsc');?>">团情快讯</a></li>
+                            <li><a href="<?php echo U('Index/news?tag=xsc');?>">新闻</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -94,7 +94,7 @@
       
 	<?php if(I('id')){ ?>
 		<div class="am-g am-g-fixed">
-	<div class="am-u-md-12 am-u-md-centered am-u-sm-11 am-u-sm-centered">
+	<div class="am-u-md-12 am-u-sm-11 am-u-sm-centered">
 		<article class="am-article">
 			<div class="am-article-hd">
 				<h1 class="article-title am-article-title"><?php echo ($data["title"]); ?></h1>
@@ -106,6 +106,25 @@
 			</div>
 
 		</article>
+	</div>
+	<div class="am-u-md-12">
+		<!-- 多说评论框 start -->
+		<div class="ds-thread" data-thread-key="<?php echo ($data["id"]); ?>" data-title="<?php echo ($data["title"]); ?>"></div>
+		<!-- 多说评论框 end -->
+		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		<script type="text/javascript">
+			var duoshuoQuery = {short_name:"sculife"};
+			(function() {
+				var ds = document.createElement('script');
+				ds.type = 'text/javascript';ds.async = true;
+				ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+				ds.charset = 'UTF-8';
+				(document.getElementsByTagName('head')[0]
+				|| document.getElementsByTagName('body')[0]).appendChild(ds);
+			})();
+		</script>
+		<!-- 多说公共JS代码 end -->
+
 	</div>
 </div>
 
@@ -152,7 +171,9 @@
                                 <div class="list-tag"><span class="am-icon-tag"></span><span><?php echo ($vo["category"]); ?></span></div>
                             </li><?php endforeach; endif; else: echo "" ;endif; ?>
                         <div style="text-align: right;margin-top:5px;">
-                            <a href="<?php echo U('Index/articleList?tag=青春川大');?>" class="am-text-right">更多</a>
+                            <a >更多:</a>
+                            <a class="am-btn am-btn-default" href="<?php echo U('Index/notice?tag=youth');?>">公告</a>
+                            <a class="am-btn am-btn-default" href="<?php echo U('Index/news?tag=youth');?>">团情快讯</a>
                         </div>
 
                     </ul>
@@ -163,10 +184,13 @@
                                 <a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>'><?php echo ($vo["title"]); ?></a>
                                 <div class="list-tag"><span class="am-icon-tag"></span><span><?php echo ($vo["category"]); ?></span></div>
                             </li><?php endforeach; endif; else: echo "" ;endif; ?>
-                        <div style="text-align: right;margin-top:5px;">
-                            <a href="<?php echo U('Index/articleList?tag=学工部');?>" class="am-text-right">更多</a>
-                        </div>
+
                     </ul>
+                    <div style="text-align: right;margin-top:5px;">
+                        <a >更多:</a>
+                        <a class="am-btn am-btn-default" href="<?php echo U('Index/notice?tag=xsc');?>">公告</a>
+                        <a class="am-btn am-btn-default" href="<?php echo U('Index/news?tag=xsc');?>">新闻</a>
+                    </div>
                 </div>
                 <div data-tab-panel-2 class="am-tab-panel ">
                     建设中。。。敬请期待
@@ -183,9 +207,7 @@
 		<hr>
 		<p class="am-padding-left am-text-center">© 2015 SCULIFE.</p>
 	</footer>
-	<a href="#" class="am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}">
-		<span class="am-icon-btn am-icon-th-list"></span>
-	</a>
+	<a href="#top"  data-am-smooth-scroll title="回到顶部" class="am-icon-btn am-icon-arrow-up am-active" id="go-top"></a>
 	<!--[if lt IE 9]>
 	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
