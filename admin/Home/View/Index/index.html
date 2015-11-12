@@ -1,7 +1,7 @@
 <extend name="base" />
 <block name="header">
 	<include file="header" />
-	<php>if(I('id')){</php>
+	<php>if(I('id')||I('tag')){</php>
 	<php>}else{</php>
 	<include file="slider" />
 	<php>}</php>

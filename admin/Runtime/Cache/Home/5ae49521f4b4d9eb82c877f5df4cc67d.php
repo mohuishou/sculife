@@ -70,7 +70,7 @@
 
 </header>
 <!--header结束-->
-	<?php if(I('id')){ ?>
+	<?php if(I('id')||I('tag')){ ?>
 	<?php }else{ ?>
 	<!--slider开始-->
 <div class="slider ">
@@ -112,8 +112,8 @@
 	<?php }elseif(I('tag')){ ?>
 		<div class="am-g am-g-fixed">
     <div class="am-u-md-12">
-        <div class="am-panel am-panel-default">
-            <div class="am-panel-hd"><?php echo ($_GET['tag']); ?></div>
+        <div class="am-panel am-panel-primary">
+            <div class="am-panel-hd"><?php echo ($tag); ?></div>
             <div class="am-panel-bd">
                 <ul class="am-list">
                     <?php if(is_array($list['list'])): $i = 0; $__LIST__ = $list['list'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li data-am-scrollspy="{animation:'scale-up',delay:'300'}">

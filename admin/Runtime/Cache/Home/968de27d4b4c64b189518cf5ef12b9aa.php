@@ -30,7 +30,7 @@
     <div class="header  am-topbar">
         <div class="am-g am-g-fixed">
             <h1 class="am-topbar-brand">
-                <a href="#">SCULIFE</a>
+                <a href="<?php echo U('Index/index');?>">SCULIFE</a>
             </h1>
 
             <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
@@ -44,8 +44,8 @@
                         </a>
                         <ul class="am-dropdown-content">
                             <li class="am-dropdown-header">请选择类别</li>
-                            <li><a href="#">公告</a></li>
-                            <li><a href="#">团情快讯</a></li>
+                            <li><a href="<?php echo U('Index/notice?tag=youth');?>">公告</a></li>
+                            <li><a href="<?php echo U('Index/news?tag=youth');?>">团情快讯</a></li>
                         </ul>
                     </li>
                     <li class="am-dropdown" data-am-dropdown>
@@ -54,13 +54,13 @@
                         </a>
                         <ul class="am-dropdown-content">
                             <li class="am-dropdown-header">请选择类别</li>
-                            <li><a href="#">公告</a></li>
-                            <li><a href="#">团情快讯</a></li>
+                            <li><a href="<?php echo U('Index/notice?tag=xsc');?>">公告</a></li>
+                            <li><a href="<?php echo U('Index/news?tag=xsc');?>">团情快讯</a></li>
                         </ul>
                     </li>
                 </ul>
                 <div class="am-topbar-right">
-                    <a href="<?php echo U('Admin/index');?>" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">进入后台</a>
+                    <a href="<?php echo U('Admin/index');?>" class="am-btn am-topbar-btn am-btn-sm">进入后台</a>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
 
 </header>
 <!--header结束-->
-	<?php if(I('id')){ ?>
+	<?php if(I('id')||I('tag')){ ?>
 	<?php }else{ ?>
 	<!--slider开始-->
 <div class="slider ">
@@ -97,12 +97,12 @@
 	<div class="am-u-md-12 am-u-md-centered am-u-sm-11 am-u-sm-centered">
 		<article class="am-article">
 			<div class="am-article-hd">
-				<h1 class="am-article-title"><?php echo ($data["title"]); ?></h1>
+				<h1 class="article-title am-article-title"><?php echo ($data["title"]); ?></h1>
 				<p class="am-article-meta"><?php echo ($data["tag"]); ?> <?php echo ($data["category"]); ?> <?php echo ($data["ctime"]); ?></p>
 			</div>
 
 			<div class="am-article-bd">
-				<pre><?php echo ($data["content"]); ?></pre>
+				<div class="article-body"><?php echo ($data["content"]); ?></div>
 			</div>
 
 		</article>
@@ -112,14 +112,18 @@
 	<?php }elseif(I('tag')){ ?>
 		<div class="am-g am-g-fixed">
     <div class="am-u-md-12">
-        <div class="am-panel am-panel-default">
+        <div class="am-panel am-panel-primary">
             <div class="am-panel-hd"><?php echo ($_GET['tag']); ?></div>
             <div class="am-panel-bd">
                 <ul class="am-list">
-                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li data-am-scrollspy="{animation:'scale-up',delay:'300'}">
+                    <?php if(is_array($list['list'])): $i = 0; $__LIST__ = $list['list'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li data-am-scrollspy="{animation:'scale-up',delay:'300'}">
                             <a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>'><?php echo ($vo["title"]); ?></a>
                             <div class="list-tag"><span class="am-icon-tag"></span><span><?php echo ($vo["category"]); ?></span></div>
                         </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                    <div id="table-page">
+                        <?php echo ($list["page"]); ?>
+                    </div>
+
                 </ul>
             </div>
         </div>

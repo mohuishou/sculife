@@ -26,15 +26,31 @@ class IndexController extends Controller{
     }
 
     public function notice($tag){
+        if($tag=="youth"){
+            $tags="青春川大";
+        }elseif($tag=='xsc'){
+            $tags="学工部";
+        }else{
+            $this->error('对不起，参数错误');
+        }
         $handle=new HandleController();
         $list=$handle->getAllNotice($tag);
+        $this->assign('tag',$tags);
         $this->assign('list',$list);
         $this->display('index');
     }
 
     public function news($tag){
+        if($tag=="youth"){
+            $tags="青春川大";
+        }elseif($tag=='xsc'){
+            $tags="学工部";
+        }else{
+            $this->error('对不起，参数错误');
+        }
         $handle=new HandleController();
         $list=$handle->getAllNews($tag);
+        $this->assign('tag',$tags);
         $this->assign('list',$list);
         $this->display('index');
     }
