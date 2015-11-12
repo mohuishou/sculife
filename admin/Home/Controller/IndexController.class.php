@@ -9,6 +9,11 @@ use Think\Controller;
 class IndexController extends Controller{
 
     public function index(){
+        $handle=new HandleController();
+        $youth=$handle->getArticle(['tag'=>'青春川大'],5);
+        $xsc=$handle->getArticle(['tag'=>'学工部'],5);
+        $this->assign('youth',$youth);
+        $this->assign('xsc',$xsc);
         $this->display();
     }
 

@@ -8,3 +8,6 @@ header .header{
 .slider img{
 	max-height: 600px;
 }
+.list-tag{
+	text-align: right;
+}

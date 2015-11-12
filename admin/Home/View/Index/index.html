@@ -1,14 +1,18 @@
 <extend name="base" />
 <block name="header">
 	<include file="header" />
+	<php>if(I('id')){</php>
+	<php>}else{</php>
 	<include file="slider" />
-
-
+	<php>}</php>
 </block>
 
 <block name="main">
+	<php>if(I('id')){</php>
 		<include file="article" />
-
+	<php>}else{</php>
+		<include file="main" />
+	<php>}</php>
 </block>
 <block name="footer">
 	<include file="footer" />

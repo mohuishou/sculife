@@ -30,7 +30,7 @@
     <div class="header  am-topbar">
         <div class="am-g am-g-fixed">
             <h1 class="am-topbar-brand">
-                <a href="#">Amaze UI</a>
+                <a href="#">SCULIFE</a>
             </h1>
 
             <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
@@ -41,7 +41,6 @@
                     <li><a href="#">项目</a></li>
 
                 </ul>
-
                 <div class="am-topbar-right">
                     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">进入后台</button>
                 </div>
@@ -53,6 +52,8 @@
 
 </header>
 <!--header结束-->
+	<?php if(I('id')){ ?>
+	<?php }else{ ?>
 	<!--slider开始-->
 <div class="slider ">
     <div data-am-widget="slider" class="am-slider am-slider-c2" data-am-slider='{&quot;directionNav&quot;:false}' >
@@ -69,11 +70,11 @@
     </div>
 </div>
 <!--slider结束-->
-
-
+	<?php } ?>
 
       
       
+	<?php if(I('id')){ ?>
 		<div class="am-g am-g-fixed">
 	<div class="am-u-md-12 am-u-md-centered am-u-sm-11 am-u-sm-centered">
 		<article class="am-article">
@@ -90,7 +91,49 @@
 	</div>
 </div>
 
+	<?php }else{ ?>
+		<div id="main" class="am-g am-g-fixed">
+    <div class="am-u-md-12">
+        <p class="am-text-center am-margin-top">在这里你可以看到最新最快的川大信息</p>
+    </div>
+    <!--选项卡开始-->
+    <div class="am-u-md-12">
+        <div data-am-widget="tabs"
+             class="am-tabs am-tabs-default"
+                >
+            <ul class="am-tabs-nav am-cf">
+                <li class="am-active"><a href="[data-tab-panel-0]">青春川大</a></li>
+                <li class=""><a href="[data-tab-panel-1]">学工部</a></li>
+                <li class=""><a href="[data-tab-panel-2]">教务处</a></li>
+            </ul>
+            <div class="am-tabs-bd">
+                <div data-tab-panel-0 class="am-tab-panel am-active">
+                    <ul class="am-list">
+                        <?php if(is_array($youth)): $i = 0; $__LIST__ = $youth;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li data-am-scrollspy="{animation:'scale-up',delay:'300'}">
+                                <a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>'><?php echo ($vo["title"]); ?></a>
+                                <div class="list-tag"><span class="am-icon-tag"></span><span><?php echo ($vo["category"]); ?></span></div>
+                            </li><?php endforeach; endif; else: echo "" ;endif; ?>
 
+                    </ul>
+                </div>
+                <div data-tab-panel-1 class="am-tab-panel ">
+                    <ul class="am-list">
+                        <?php if(is_array($xsc)): $i = 0; $__LIST__ = $xsc;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li data-am-scrollspy="{animation:'scale-up',delay:'300'}">
+                                <a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>'><?php echo ($vo["title"]); ?></a>
+                                <div class="list-tag"><span class="am-icon-tag"></span><span><?php echo ($vo["category"]); ?></span></div>
+                            </li><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                    </ul>
+                </div>
+                <div data-tab-panel-2 class="am-tab-panel ">
+                    建设中。。。敬请期待
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--选项卡结束-->
+</div>
+	<?php } ?>
 
       
 		<footer>
