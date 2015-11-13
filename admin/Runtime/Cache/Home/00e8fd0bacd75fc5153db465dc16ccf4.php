@@ -40,7 +40,7 @@
 				<div class="row">
 					<div class="input-field col s12 center">
 
-						<p class="center login-form-text">SCULIFE</p>
+						<p class="center login-form-text"><a href="<?php echo U('Index/index');?>">SCULIFE</a></p>
 
 					</div>
 				</div>
@@ -118,13 +118,11 @@
 				success:function(msg){
 					// alert(msg);
 					if(msg.status==1){
-						$("#confirm").text(msg.message).delay(2000);
+						$("#confirm").text(msg.message);
 						location.href ="/Match/sculife/index.php/Home/Admin/index";
 					}else{
 						$('#confirm').css('background','#FF9999');
-						$("#confirm").text(msg.message);
-						
-
+						$("#confirm").text(msg.message);		
 					}
 				},
 				error:function(a,b,c){

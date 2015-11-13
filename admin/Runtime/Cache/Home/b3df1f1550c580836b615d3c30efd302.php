@@ -26,7 +26,7 @@
   <![endif]-->
       
 	<header class="am-topbar admin-header">
-		<div class="am-topbar-brand"> <strong>sculife</strong>
+<div class="am-topbar-brand"> <a href="<?php echo U('Index/index');?>"><strong>sculife</strong></a>
 			<small>后台管理</small>
 		</div>
 
@@ -59,7 +59,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="<?php echo U('Admin/logout');?>">
 								<span class="am-icon-power-off"></span>
 								退出
 							</a>
@@ -146,7 +146,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<?php echo U('Admin/logout');?>">
                     <span class="am-icon-sign-out"></span>
                     注销
                 </a>

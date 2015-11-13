@@ -9,7 +9,7 @@ class AdminBaseController extends Controller {
 
     public function _initialize(){
         if($this->is_login()){
-            $this->index();
+            
         }else{
             $this->login();
         }
@@ -27,8 +27,15 @@ class AdminBaseController extends Controller {
         }else{
             
             $this->display('login');
-            exit()
+            exit();
         }
+    }
+
+    public function logout(){
+        if($_SESSION['id']){
+            unset($_SESSION['id']);
+            $this->login();
+        } 
     }
 
     /**
