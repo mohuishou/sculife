@@ -1,0 +1,24 @@
+<extend name="base" />
+<block name="header">
+    <include file="header" />
+</block>
+
+<block name="main">
+    <div class="am-cf admin-main">
+        <include file="sidebar" />
+        <div class="admin-content">
+            <div class="am-g">
+                <include file="system-header" />
+                <switch name="Think.get.system">
+                    <case value="add"><include file="system-add" /></case>
+                    <default /><include file="system-list" />
+                </switch>
+
+            </div>
+        </div>
+    </div>
+</block>
+<block name="footer">
+    <include file="footer" />
+</block>
+

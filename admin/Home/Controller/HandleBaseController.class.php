@@ -63,8 +63,6 @@ class HandleBaseController extends Controller {
     public function getConfig($map,$limit){
         $config=M('config');
         $data=$config->where($map)->order('id DESC')->limit($limit)->select();
-
-
         foreach($data as $k => $v){
             $pattern=explode('#',trim($v['pattern']));
 //            print_r($pattern);
@@ -74,6 +72,10 @@ class HandleBaseController extends Controller {
         return $data;
     }
 
-
+    public function getCategory($map,$limit){
+        $category=M('category');
+        $data=$category->where($map)->order('id DESC')->limit($limit)->select();
+        return $data;
+    }
 
 }

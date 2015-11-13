@@ -12,6 +12,7 @@ class ArticleController extends ArticleBaseController {
         if(!empty($category)) $map['category']=$category;
         if(!empty($tag)) $map['tag']=$tag;
         $config=$handle->getConfig($map);
+//        print_r($config);
         foreach($config as $k => $v){
             if($v['status']==1){
                 $this->grabAllArticle($v);

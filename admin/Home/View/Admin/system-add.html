@@ -1,0 +1,35 @@
+<div class="am-u-md-8 am-u-sm-12">
+    <div class="am-panel am-panel-primary">
+        <div class="am-panel-hd">添加网站</div>
+        <div class="am-panel-bd am-scrollable-horizontal ">
+            <form class="am-form  " >
+                <div class="am-form-group">
+                    <label>网站名</label>
+                    <input type="text" name="tag" class=""  placeholder="如：青春川大">
+                </div>
+                <div class="am-form-group">
+                    <label>分类</label>
+                    <input type="text" name="category" class=""  placeholder="如：公告">
+                </div>
+                <div class="am-form-group">
+                    <label>网站主域名</label>
+                    <input type="text" name="mainsite" class=""  placeholder="如：http://youth.scu.edu.cn/">
+                </div>
+                <div class="am-form-group">
+                    <label>需要抓取的详细地址</label>
+                    <input type="text" class="" name="url"  placeholder="如：http://youth.scu.edu.cn/index.php/main/web/notice">
+                </div>
+                <div class="am-form-group">
+                    <label>正则（包含//，以#分割）</label>
+                            <textarea name="pattern"  rows="5" placeholder='如：/<a href="(\/index.php\/main\/web\/notice\/detail\/i\/(.+?))">(.+?)<\/a>/
+                                #/<div class="content-art">[\s\S]*<div class="share">/
+                                #/\/uploads.+?>/'></textarea>
+                    <p>注意: 前两条必须有，分别是目录的抓取以及详细文章的抓取，第三条是用于转换文章中链接的路径的</p>
+                </div>
+                <div class="am-form-group">
+                    <button class="am-btn am-btn-primary am-btn-block">确认添加</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -31,6 +31,20 @@ class AdminController extends Controller {
 
     }
 
+    public function system(){
+        $handle=new HandleController();
+        $config=$handle->getConfig();
+        $category=$handle->getCategory();
+        $this->assign('category',$category);
+        $this->assign('config',$config);
+        $this->display();
+    }
+
+    public function spider($tag='',$category=''){
+        $spider=new ArticleController();
+        $spider->spiderArticle($category,$tag);
+    }
+
     public function news($tag){
         $handle=new HandleController();
         $data=$handle->getAllNews($tag);
@@ -47,6 +61,7 @@ class AdminController extends Controller {
         $this->assign('page',$data['page']);
         $this->display('index');
     }
+
 
 
 }

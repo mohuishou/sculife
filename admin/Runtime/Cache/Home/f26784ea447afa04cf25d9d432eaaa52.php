@@ -25,7 +25,7 @@
   </p>
   <![endif]-->
       
-	<header class="am-topbar admin-header">
+    <header class="am-topbar admin-header">
 		<div class="am-topbar-brand"> <strong>sculife</strong>
 			<small>后台管理</small>
 		</div>
@@ -78,8 +78,8 @@
 
       
       
-	<div class="am-cf admin-main">
-		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+    <div class="am-cf admin-main">
+        <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
         <ul class="am-list admin-sidebar-list">
             <li>
@@ -175,227 +175,132 @@
     </div>
 </div>
 <!-- sidebar end -->
-	<?php switch($_GET['tag']): case "youth": ?><!-- content start -->
-<div class="admin-content">
-
-    <div class="am-cf am-padding">
-        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg"><?php echo ($des); ?></strong> / <small>青春川大</small></div>
+        <div class="admin-content">
+            <div class="am-g">
+                <div class="am-cf am-padding">
+    <div class="am-fl am-cf">
+        <strong class="am-text-primary am-text-lg">系统设置</strong>
+        /
+        <small>在这里进行相关的系统配置</small>
     </div>
-
-    <div class="am-g">
-        <div class="am-u-md-12 am-scrollable-horizontal">
-            <table class="am-table am-text-nowrap  am-table-bordered am-table-radius am-table-hover am-table-centered">
+</div>
+<ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
+    <li>
+        <a href="<?php echo U('Admin/system?system=list');?>" class="am-text-success">
+            <span class="am-icon-btn am-icon-file-text-o"></span>
+            <br/>
+            网站列表
+            <br/>
+        </a>
+    </li>
+    <li>
+        <a href="<?php echo U('Admin/system?system=add');?>" class="am-text-warning">
+            <span class="am-icon-btn am-icon-pencil-square-o"></span>
+            <br/>
+            添加网站
+            <br/>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:alert('正在建设中，尽请期待！')" class="am-text-danger">
+            <span class="am-icon-btn am-icon-bell-o"></span>
+            <br/>
+            分类&便签
+        </a>
+    </li>
+    <li>
+        <a data-am-modal="{target: '#spider',  width: 400, height: 225}" class="am-text-secondary">
+            <span class="am-icon-btn am-icon-circle-o"></span>
+            <br/>
+           手动抓取文章
+        </a>
+    </li>
+</ul>
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="spider">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">手动获取数据
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-bd">
+            <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a class="am-btn am-btn-xs am-btn-primary" href="<?php echo U('Admin/spider',array('tag'=>vo['tag'],'category'=>vo['category']));?>"><?php echo ($vo["tag"]); echo ($vo["category"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+            <a class="am-btn am-btn-xs am-btn-success" href="<?php echo U('Admin/spider');?>">获取全部消息</a>
+        </div>
+    </div>
+</div>
+                <?php switch($_GET['system']): case "add": ?><div class="am-u-md-8 am-u-sm-12">
+    <div class="am-panel am-panel-primary">
+        <div class="am-panel-hd">添加网站</div>
+        <div class="am-panel-bd am-scrollable-horizontal ">
+            <form class="am-form  " >
+                <div class="am-form-group">
+                    <label>网站名</label>
+                    <input type="text" name="tag" class=""  placeholder="如：青春川大">
+                </div>
+                <div class="am-form-group">
+                    <label>分类</label>
+                    <input type="text" name="category" class=""  placeholder="如：公告">
+                </div>
+                <div class="am-form-group">
+                    <label>网站主域名</label>
+                    <input type="text" name="mainsite" class=""  placeholder="如：http://youth.scu.edu.cn/">
+                </div>
+                <div class="am-form-group">
+                    <label>需要抓取的详细地址</label>
+                    <input type="text" class="" name="url"  placeholder="如：http://youth.scu.edu.cn/index.php/main/web/notice">
+                </div>
+                <div class="am-form-group">
+                    <label>正则（包含//，以#分割）</label>
+                            <textarea name="pattern"  rows="5" placeholder='如：/<a href="(\/index.php\/main\/web\/notice\/detail\/i\/(.+?))">(.+?)<\/a>/
+                                #/<div class="content-art">[\s\S]*<div class="share">/
+                                #/\/uploads.+?>/'></textarea>
+                    <p>注意: 前两条必须有，分别是目录的抓取以及详细文章的抓取，第三条是用于转换文章中链接的路径的</p>
+                </div>
+                <div class="am-form-group">
+                    <button class="am-btn am-btn-primary am-btn-block">确认添加</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div><?php break;?>
+                    <?php default: ?><div class="am-u-md-12">
+    <div class="am-panel am-panel-primary">
+        <div class="am-panel-hd">所有网站</div>
+        <div class="am-panel-bd am-scrollable-horizontal am-padding-0">
+            <table class="am-table  am-text-nowrap am-table-hover am-table-centered">
                 <thead>
-                <tr>
                     <th>选择</th>
                     <th>编号</th>
-                    <th>标题</th>
-                    <th>来源</th>
+                    <th>名称</th>
                     <th>分类</th>
-                    <th>创建时间</th>
+                    <th>抓取网址</th>
                     <th>操作</th>
-                </tr>
                 </thead>
-                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                        <td><input type="checkbox"></td>
+                <tbody>
+                <?php if(is_array($config)): $i = 0; $__LIST__ = $config;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                        <td><input type="checkbox" name=""></td>
                         <td><?php echo ($i); ?></td>
-                        <td><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>'><?php echo ($vo["title"]); ?></a></td>
                         <td><?php echo ($vo["tag"]); ?></td>
                         <td><?php echo ($vo["category"]); ?></td>
-                        <td><?php echo ($vo["ctime"]); ?></td>
-                        <td><a class="am-text-danger" href="#">删除</a></td>
+                        <td><?php echo ($vo["url"]); ?></td>
+                        <td>
+                            <a class="am-btn am-btn-xs am-btn-default" title="点击禁用" href="#">已启用</a>
+                            <a class="am-btn am-btn-xs am-btn-primary" href="#">修改</a>
+                            <a class="am-btn am-btn-xs am-btn-danger" href="#">删除</a>
+                        </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                </tbody>
             </table>
-            <div id="table-page">
-                <?php echo ($page); ?>
-            </div>
-            <p></p>
         </div>
     </div>
-</div><?php break;?>
-		<?php case "xsc": ?><!-- content start -->
-<div class="admin-content">
+</div><?php endswitch;?>
 
-    <div class="am-cf am-padding">
-        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg"><?php echo ($des); ?></strong> / <small>学工部</small></div>
-    </div>
-
-    <div class="am-g">
-        <div class="am-u-md-12 am-scrollable-horizontal">
-            <table class="am-table am-text-nowrap  am-table-bordered am-table-radius am-table-hover am-table-centered">
-                <thead>
-                <tr>
-                    <th>选择</th>
-                    <th>编号</th>
-                    <th>标题</th>
-                    <th>来源</th>
-                    <th>分类</th>
-                    <th>创建时间</th>
-                    <th>操作</th>
-                </tr>
-                </thead>
-                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                        <td><input type="checkbox"></td>
-                        <td><?php echo ($i); ?></td>
-                        <td><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>'><?php echo ($vo["title"]); ?></a></td>
-                        <td><?php echo ($vo["tag"]); ?></td>
-                        <td><?php echo ($vo["category"]); ?></td>
-                        <td><?php echo ($vo["ctime"]); ?></td>
-                        <td><a class="am-text-danger" href="#">删除</a></td>
-                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-            </table>
-            <div id="table-page">
-                <?php echo ($page); ?>
             </div>
-            <p></p>
         </div>
     </div>
-</div><?php break;?>
-		<?php case "log": ?><!-- content start -->
-<div class="admin-content">
-
-    <div class="am-cf am-padding">
-        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">日志</strong> / <small>日志</small></div>
-    </div>
-
-    <div class="am-g">
-        <div class="am-u-md-12">
-            <table class="am-table am-table-bordered am-table-radius am-table-hover am-table-centered">
-                <thead>
-                <tr>
-                    <th>编号</th>
-                    <th>日志内容</th>
-                    <th>创建时间</th>
-                </tr>
-                </thead>
-                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                        <td><?php echo ($i); ?></td>
-                        <td><?php echo ($vo["message"]); ?></td>
-                        <td><?php echo ($vo["ctime"]); ?></td>
-                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-            </table>
-            <div id="table-page">
-                <?php echo ($page); ?>
-            </div>
-            <p></p>
-        </div>
-    </div>
-</div><?php break;?>
-		<?php default: ?>
-		<!-- content start -->
-		<div class="admin-content">
-
-			<div class="am-cf am-padding">
-				<div class="am-fl am-cf">
-					<strong class="am-text-primary am-text-lg">首页</strong>
-					/
-					<small>最新公告</small>
-				</div>
-			</div>
-
-			<ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
-				<li>
-					<a href="#" class="am-text-success">
-						<span class="am-icon-btn am-icon-file-text-o"></span>
-						<br/>
-						青春川大
-						<br/>
-						<?php echo ($count["youth"]); ?>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="am-text-warning">
-						<span class="am-icon-btn am-icon-pencil-square-o"></span>
-						<br/>
-						学工部
-						<br/>
-						<?php echo ($count["xsc"]); ?>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:alert('正在建设中，尽请期待！')" class="am-text-danger">
-						<span class="am-icon-btn am-icon-bell-o"></span>
-						<br/>
-						教务处
-						<br/>
-						8082
-					</a>
-				</li>
-				<li>
-					<a href="javascript:alert('正在建设中，尽请期待！')" class="am-text-secondary">
-						<span class="am-icon-btn am-icon-circle-o"></span>
-						<br/>
-						更多
-						<br/>
-						3000
-					</a>
-				</li>
-			</ul>
-
-
-
-			<div class="am-g">
-				<div class="am-u-md-7" id="new-notice">
-					<div class="am-cf am-padding">
-						<div class="am-fl am-cf">
-							<strong class=am-text-lg">最近通知</strong>
-							/
-							<small>最近抓取到的通知</small>
-						</div>
-					</div>
-					<table class="am-table am-table-bordered am-table-radius am-table-hover am-table-centered">
-						<thead>
-							<tr>
-								<th>编号</th>
-								<th>标题</th>
-								<th>来源</th>
-								<th>分类</th>
-								<th>创建时间</th>
-							</tr>
-						</thead>
-						<?php if(is_array($someArticle)): $i = 0; $__LIST__ = $someArticle;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-								<td><?php echo ($i); ?></td>
-								<td><?php echo ($vo["title"]); ?></td>
-								<td><?php echo ($vo["tag"]); ?></td>
-								<td><?php echo ($vo["category"]); ?></td>
-								<td><?php echo ($vo["ctime"]); ?></td>
-
-							</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-					</table>
-
-				</div>
-				<div class="am-u-md-5" id="some-log">
-					<div class="am-cf am-padding">
-						<div class="am-fl am-cf">
-							<strong class=am-text-lg">最近日志</strong>
-							/
-							<small>最近的操作日志</small>
-						</div>
-					</div>
-					<table class="am-table am-table-bordered am-table-radius am-table-hover am-table-centered">
-						<thead>
-						<tr>
-							<th>编号</th>
-							<th>操作</th>
-							<th>创建时间</th>
-						</tr>
-						</thead>
-						<?php if(is_array($someLog)): $i = 0; $__LIST__ = $someLog;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-								<td><?php echo ($i); ?></td>
-								<td><?php echo ($vo["message"]); ?></td>
-								<td><?php echo ($vo["ctime"]); ?></td>
-
-							</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-					</table>
-
-				</div>
-			</div>
-		</div>
-		<!-- content end --><?php endswitch;?>
-	</div>
 
       
-		<footer>
+    	<footer>
 		<hr>
 		<p class="am-padding-left">© 2015 SCULIFE,BY-艺林清森团队.</p>
 	</footer>

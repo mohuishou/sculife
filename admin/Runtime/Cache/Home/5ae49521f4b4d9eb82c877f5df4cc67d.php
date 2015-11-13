@@ -94,7 +94,7 @@
       
 	<?php if(I('id')){ ?>
 		<div class="am-g am-g-fixed">
-	<div class="am-u-md-12 am-u-sm-11 am-u-sm-centered">
+	<div class="am-u-md-12 am-u-sm-12 am-u-sm-centered">
 		<article class="am-article">
 			<div class="am-article-hd">
 				<h1 class="article-title am-article-title"><?php echo ($data["title"]); ?></h1>

@@ -1,0 +1,52 @@
+<div class="am-cf am-padding">
+    <div class="am-fl am-cf">
+        <strong class="am-text-primary am-text-lg">系统设置</strong>
+        /
+        <small>在这里进行相关的系统配置</small>
+    </div>
+</div>
+<ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
+    <li>
+        <a href="{:U('Admin/system?system=list')}" class="am-text-success">
+            <span class="am-icon-btn am-icon-file-text-o"></span>
+            <br/>
+            网站列表
+            <br/>
+        </a>
+    </li>
+    <li>
+        <a href="{:U('Admin/system?system=add')}" class="am-text-warning">
+            <span class="am-icon-btn am-icon-pencil-square-o"></span>
+            <br/>
+            添加网站
+            <br/>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:alert('正在建设中，尽请期待！')" class="am-text-danger">
+            <span class="am-icon-btn am-icon-bell-o"></span>
+            <br/>
+            分类&便签
+        </a>
+    </li>
+    <li>
+        <a data-am-modal="{target: '#spider',  width: 400, height: 225}" class="am-text-secondary">
+            <span class="am-icon-btn am-icon-circle-o"></span>
+            <br/>
+           手动抓取文章
+        </a>
+    </li>
+</ul>
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="spider">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">手动获取数据
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-bd">
+            <volist name="category" id="vo">
+                <a class="am-btn am-btn-xs am-btn-primary" href="{:U('Admin/spider',array('tag'=>vo['tag'],'category'=>vo['category']))}">{$vo.tag}{$vo.category}</a>
+            </volist>
+            <a class="am-btn am-btn-xs am-btn-success" href="{:U('Admin/spider')}">获取全部消息</a>
+        </div>
+    </div>
+</div>
