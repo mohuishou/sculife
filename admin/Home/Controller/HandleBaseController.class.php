@@ -63,11 +63,14 @@ class HandleBaseController extends Controller {
     public function getConfig($map,$limit){
         $config=M('config');
         $data=$config->where($map)->order('id DESC')->limit($limit)->select();
+
+
         foreach($data as $k => $v){
             $pattern=explode('#',trim($v['pattern']));
 //            print_r($pattern);
             $data[$k]['pattern']=$pattern;
         }
+//        print_r($data);
         return $data;
     }
 

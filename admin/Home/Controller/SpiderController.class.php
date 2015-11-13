@@ -7,6 +7,7 @@ class SpiderController extends Controller {
 //       print_r((new HandleController())->getConfig());
 //        echo count($data);
 //        print_r($data);
+        
         $spider=new ArticleController();
         $spider->spiderArticle();
 //        $spider->xscArticle();

@@ -1,6 +1,6 @@
 <?php
 /**
- * sculife后台管理模块
+ * sculife数据处理模块
  * @author mohuishou <1@lailin.xyz>
  */
 

@@ -6,10 +6,12 @@
 namespace Home\Controller;
 use Think\Controller;
 class ArticleController extends ArticleBaseController {
-    
+
     public function spiderArticle($category,$tag){
         $handle=new HandleController();
-        $config=$handle->getConfig(['tag'=>$tag,'category'=>$category]);
+        if(!empty($category)) $map['category']=$category;
+        if(!empty($tag)) $map['tag']=$tag;
+        $config=$handle->getConfig($map);
         foreach($config as $k => $v){
             if($v['status']==1){
                 $this->grabAllArticle($v);
@@ -19,6 +21,4 @@ class ArticleController extends ArticleBaseController {
         }
         $this->ajaxReturn(['status'=>1,'message'=>'程序执行成功，请查看日志']);
     }
-
-
 }
