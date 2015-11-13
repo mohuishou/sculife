@@ -7,7 +7,7 @@ return array(
 	'DB_USER'=>'root',// 用户名
 	'DB_PWD'=>'lailin',// 密码
 	'DB_PORT'=>3306,// 端口
-	'DB_PREFIX'=>'webDesign_',// 数据库表前缀
+	'DB_PREFIX'=>'sculife_',// 数据库表前缀
 	'DB_CHARSET'=>'utf8',// 数据库字符集
-	'URL_MODEL'=>3
+	'URL_MODEL'=>1
 );

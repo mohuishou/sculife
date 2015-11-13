@@ -18,6 +18,7 @@ class ArticleBaseController extends Controller {
 	 *					pattern => 第一次采集的时候的正则
 	 *					pattern2 => 采集子网址的正则
 	 * 					pattern3 => 详细页的路径转换,选填
+	 * @return bool
 	 */
 	public function grabAllArticle($config){
 		/*------------链接数据库-------------*/
@@ -32,9 +33,11 @@ class ArticleBaseController extends Controller {
 		if (count($data)) {
 			if($article->addAll($data)){
 				$this->writeLog($config['tag'].$config['category']."，最新消息抓取成功");
+				return 1;
 			}
 		}else{
 			$this->writeLog($config['tag'].$config['category'].",没有最新的消息");
+			return 1;
 		}
 	}
 
@@ -53,7 +56,7 @@ class ArticleBaseController extends Controller {
 	 */
 	public function grabArticle($config,$maxNo){
 		$data=[];
-		$catalog=$this->spiderData($config['url'],$config['pattern']);//获取目录
+		$catalog=$this->spiderData($config['url'],$config['pattern'][0]);//获取目录
 //		print_r($catalog);
 
 
@@ -64,11 +67,11 @@ class ArticleBaseController extends Controller {
 			/*----------------获取目录下的所有文章----------*/
 			foreach ($catalog[1] as $key => $value) {
 				if($catalog[2][$key]>$maxNo){
-					$content=$this->spiderData($config['mainSite'].$value,$config['pattern2']);
-
+					$content=$this->spiderData($config['mainsite'].$value,$config['pattern'][1]);
+//					print_r($content);
 					/*------如果需要，扫描文本中是否有相对路径的链接，并转换----*/
-					if(isset($config['pattern3'])){
-						$content=$this->urlCov($config['mainSite'],$content[0][0],$config['pattern3']);
+					if(isset($config['pattern'][2])){
+						$content=$this->urlCov($config['mainsite'],$content[0][0],$config['pattern'][2]);
 					}else{
 						$content=$content[0][0];
 					}
@@ -81,11 +84,12 @@ class ArticleBaseController extends Controller {
 						'content'=>$content,
 						'number'=>$catalog[2][$key],
 						'title'=>$catalog[3][$key],
-						'website'=>$config['mainSite'].$value
+						'website'=>$config['mainsite'].$value
 					];
 				}
 			}
 		}
+
 		return $data;
 	}
 
@@ -135,9 +139,10 @@ class ArticleBaseController extends Controller {
 		curl_setopt($ch,CURLOPT_URL,$url);
 		curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
 		$data=curl_exec($ch);
-		// print_r($data);
+//		 print_r($data);
 		// $pattern="/<a href='(\/News_Detail.+?)' target=_blank>(.+?)<\/a>/";
 		preg_match_all($pattern,$data,$link);
+//		print_r($link);
 		return $link;
     }
 }

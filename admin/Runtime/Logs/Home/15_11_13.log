@@ -1,0 +1,2069 @@
+[ 2015-11-13T13:14:08+08:00 ] ::1 /Match/sculife/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.052003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `webdesign_article` [ RunTime:0.6060s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `webdesign_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0430s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `webdesign_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2015-11-13T13:14:12+08:00 ] ::1 /Match/sculife/index.php?s=/Home/Index/article/id/211.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webdesign_article` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `webdesign_article` WHERE ( id=211 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:14:17+08:00 ] ::1 /Match/sculife/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webdesign_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `webdesign_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `webdesign_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:24:46+08:00 ] ::1 /Match/sculife/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webdesign_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `webdesign_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `webdesign_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:41:39+08:00 ] ::1 /Match/sculife/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:42:00+08:00 ] ::1 /Match/sculife/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:42:03+08:00 ] ::1 /Match/sculife/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:42:06+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/214.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=214 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-13T13:43:11+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 13:43:10') [ RunTime:0.0670s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-13 13:43:10','青春川大','团情快讯','<div class=\"content-art\">
+			<h1>四川大学第二十届团校正式启动</h1>
+			<div class=\"attr\">
+				发布时间：2015-11-12 17:57:00  浏览次数：<script type=\"text/javascript\" src=\"/index.php/system/web/view/viewnumber/id/9304\"></script>
+			</div>
+			<div class=\"content-text\">
+				<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 为深入贯彻落实党的十八届三中、四中全会会议精神，认真学习中央关于加强和改进党的群团工作的意见精神，全面提升基层团支部书记的思想政治水平和业务工作能力，加强基层团组织&ldquo;活力提升&rdquo;工程建设，校团委于2015年10月31日，正式启动了四川大学第二十届团校相关工作，全校2015级317名基层团支书参加了本届团校的学习，截至目前已成功开展了六次行课。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"http://youth.scu.edu.cn/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 31日上午，江安校区综合楼c407教室响起了嘹亮的团歌，校团委组织部工作人员向在场人员宣读了本年度校级团校的考核办法，第二十届团校正式开始。简短的开学典礼结束后，各学院的团支部书记迎来了他们的第一次行课，校团委徐海鑫书记与学员们共同回顾了学生运动和全国学联的发展历史，并对在场的同学提出了殷切的期望：希望他们立足自身工作，不断提升个人综合能力，为基层团组织建设工作贡献自己的力量。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"http://youth.scu.edu.cn/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 接下来的行课中校团委袁雯副书记、蒋丽华副书记、黄菲娅老师、罗淼老师和陈姹月老师分别就领导力培养、校园文化建设、新媒体时代下的网络环境以及创新创业等方面向学员们做了详细的介绍和深入的交流。行课过程中学员们认真听讲，积极互动，气氛活跃；课后学员们积极提交心得感想，一字一句充满了对课堂内容的深思和个人独到的见解。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"http://youth.scu.edu.cn/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 本次团校的成功开办，不仅加强了校团委与基层团支书之间的交流，更提升了基层团支书的思想境界和业务水平，有利于团支书们在今后基层团组织建设中充分发挥自身优势，积极主动探索，有效提高团组织工作水平以及提升工作实效，对推进基层团组织建设有着十分重要的作用。</span></div>
+<div>
+	&nbsp;</div>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class=\"share\">','9304','四川大学第二十届团校正式启动','http://youth.scu.edu.cn/index.php/main/web/news-group/detail/i/9304') [ RunTime:0.0540s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯，最新消息抓取成功','2015-11-13 13:43:10') [ RunTime:0.0470s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '学工部' AND `category` = '公告' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-13 13:43:11','学工部','公告','<div id=\"DivContent\" align=\"left\"><p>
+	<span style=\"font-size: 16px\">各学院、中心所：</span></p>
+<p>
+	<span style=\"font-size: 16px\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 根据《关于开展2015年度全国高校辅导员工作优秀论文评选活动的通知》要求，按照公平、公正、公开的原则，经个人申报，学院推荐，部门评议，拟推荐以下论文，现将推荐结果进行公示。</span></p>
+<p>
+	&nbsp;</p>
+<table align=\"center\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 586px\" width=\"586\">
+	<tbody>
+		<tr>
+			<td style=\"width: 57px\">
+				<p align=\"center\">
+					<span style=\"font-size: 16px\">序号</span></p>
+			</td>
+			<td style=\"width: 322px\">
+				<p align=\"center\">
+					<span style=\"font-size: 16px\">论文题目</span></p>
+			</td>
+			<td style=\"width: 207px\">
+				<p align=\"center\">
+					<span style=\"font-size: 16px\">作者姓名/课题组名称</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style=\"width: 57px\">
+				<p align=\"center\">
+					<span style=\"font-size: 16px\">1</span></p>
+			</td>
+			<td style=\"width: 322px\">
+				<p>
+					<span style=\"font-size: 16px\">社会转型期藏族大学生的国家认同：基于&ldquo;985工程&rdquo;高校的实证研究</span></p>
+			</td>
+			<td style=\"width: 207px\">
+				<p align=\"center\">
+					<span style=\"font-size: 16px\">黄静、詹晴</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style=\"width: 57px\">
+				<p align=\"center\">
+					<span style=\"font-size: 16px\">2</span></p>
+			</td>
+			<td style=\"width: 322px\">
+				<p>
+					<span style=\"font-size: 16px\">高校辅导员系统开展大学生网络思想政治教育的探究</span></p>
+			</td>
+			<td style=\"width: 207px\">
+				<p align=\"center\">
+					<span style=\"font-size: 16px\">陈启胜、隗玉梁、王婧</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style=\"width: 57px\">
+				<p align=\"center\">
+					<span style=\"font-size: 16px\">3</span></p>
+			</td>
+			<td style=\"width: 322px\">
+				<p>
+					<span style=\"font-size: 16px\">当代大学生社会使命感调查研究</span></p>
+			</td>
+			<td style=\"width: 207px\">
+				<p align=\"center\">
+					<span style=\"font-size: 16px\">文铭</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div style=\"clear: both\">
+	<span style=\"font-size: 16px\">&nbsp;</span></div>
+<p>
+	<span style=\"font-size: 16px\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 公示时间为3天，如有异议，请与学生工作部联系。</span></p>
+<p>
+	<span style=\"font-size: 16px\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 联系电话：85401215</span></p>
+<p>
+	<span style=\"font-size: 16px\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 电子邮箱：<a href=\"mailto:xgb@scu.edu.cn\">xgb@scu.edu.cn</a></span></p>
+<p>
+	<span style=\"font-size: 16px\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 地址：四川大学文华活动中心301办公室</span></p>
+<p align=\"right\">
+	<span style=\"font-size: 16px\">学生工作部</span></p>
+<p align=\"right\">
+	<span style=\"font-size: 16px\">2015年11月13日</span></p>
+</div>
+                                                    </td>','4071','关于2015年度全国高校辅导员工作优秀论文评选...','http://xsc.scu.edu.cn/News_Detail.aspx?article_ID=4071&menu_id=43') [ RunTime:0.0990s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('学工部公告，最新消息抓取成功','2015-11-13 13:43:11') [ RunTime:0.0510s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '学工部' AND `category` = '新闻' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-13 13:43:11','学工部','新闻','<div id=\"DivContent\" align=\"left\"><p>
+	<span style=\"font-size: 16px\">各学院：</span></p>
+<p>
+	<span style=\"font-size: 16px\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2015年下半年第六次&ldquo;形势与政策&rdquo;课程的参考课件《大国关系演变态势》详见附件。请各位任课教师及时下载。</span></p>
+<p align=\"right\" style=\"margin-left: 21pt\">
+	<span style=\"font-size: 16px\">四川大学党委学生工作部</span></p>
+<p align=\"right\" style=\"margin-left: 21pt\">
+	<span style=\"font-size: 16px\">形势与政策教研室</span></p>
+<p align=\"right\">
+	<span style=\"font-size: 16px\">2015年11月13日</span></p>
+</div>
+                                                    </td>','4070','2015年下半年“形势与政策”课第六期参考资料','http://xsc.scu.edu.cn/News_Detail.aspx?article_ID=4070&menu_id=42') [ RunTime:0.0360s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('学工部新闻，最新消息抓取成功','2015-11-13 13:43:11') [ RunTime:0.0550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-11-13T13:43:27+08:00 ] ::1 /Match/sculife/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:43:31+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 13:43:30') [ RunTime:0.0620s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-13 13:43:31') [ RunTime:0.0370s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '学工部' AND `category` = '公告' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('学工部公告,没有最新的消息','2015-11-13 13:43:31') [ RunTime:0.0630s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '学工部' AND `category` = '新闻' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('学工部新闻,没有最新的消息','2015-11-13 13:43:31') [ RunTime:0.0310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:43:45+08:00 ] ::1 /Match/sculife/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:44:10+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/231.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=231 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:47:07+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/230.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=230 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:48:29+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sculife_config` (`mainSite`,`url`,`tag`,`category`,`pattern`) VALUES ('http://youth.scu.edu.cn','http://youth.scu.edu.cn/index.php/main/web/notice','青春川大','公告','/<a href=\"(\\/index.php\\/main\\/web\\/notice\\/detail\\/i\\/(.+?))\">(.+?)<\\/a>/') [ RunTime:0.0640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T13:50:47+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sculife_config` (`name`,`mainSite`,`url`,`tag`,`category`,`pattern`) VALUES ('youth','http://youth.scu.edu.cn','http://youth.scu.edu.cn/index.php/main/web/notice','青春川大','公告','/<a href=\"(\\/index.php\\/main\\/web\\/notice\\/detail\\/i\\/(.+?))\">(.+?)<\\/a>/#/<div class=\"content-art\">[\\s\\S]*<div class=\"share\">/#/\\/uploads.+?>/') [ RunTime:0.1030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T13:52:04+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:52:06+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T13:54:52+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pattern F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T13:55:11+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pattern F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T13:55:28+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-13T13:56:43+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:02:50+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sculife_config` (`name`,`mainSite`,`url`,`tag`,`category`,`pattern`) VALUES ('youth','http://youth.scu.edu.cn','http://youth.scu.edu.cn/index.php/main/web/news-group','青春川大','团情快讯','/<a href=\"(\\/index.php\\/main\\/web\\/news-group\\/detail\\/i\\/(.+?))\">(.+?)<\\/a>/#/<div class=\"content-art\">[\\s\\S]*<div class=\"share\">/#/\\/uploads.+?>/') [ RunTime:0.1120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:07:30+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 14:07:29') [ RunTime:0.1110s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match_all(): No ending delimiter '/' found F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 140 行.
+NOTIC: [2] rsort() expects parameter 1 to be array, null given F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 62 行.
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-13 14:07:30') [ RunTime:0.0450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:07:57+08:00 ] ::1 /Match/sculife/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:08:05+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 14:08:05') [ RunTime:0.1240s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match_all(): No ending delimiter '/' found F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 140 行.
+NOTIC: [2] rsort() expects parameter 1 to be array, null given F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 62 行.
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-13 14:08:05') [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:08:28+08:00 ] ::1 /Match/sculife/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:08:29+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/210.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=210 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:09:25+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 14:09:25') [ RunTime:0.0910s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match_all(): No ending delimiter '/' found F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 140 行.
+NOTIC: [2] rsort() expects parameter 1 to be array, null given F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 62 行.
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-13 14:09:25') [ RunTime:0.0360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2015-11-13T14:10:46+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 14:10:45') [ RunTime:0.0990s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match_all(): No ending delimiter '/' found F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 140 行.
+NOTIC: [2] rsort() expects parameter 1 to be array, null given F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 62 行.
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-13 14:10:46') [ RunTime:0.0380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:11:18+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 14:11:18') [ RunTime:0.1430s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match_all(): No ending delimiter '/' found F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 140 行.
+NOTIC: [2] rsort() expects parameter 1 to be array, null given F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 62 行.
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-13 14:11:18') [ RunTime:0.0690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:11:27+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 14:11:27') [ RunTime:0.0630s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match_all(): No ending delimiter '/' found F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 140 行.
+NOTIC: [2] rsort() expects parameter 1 to be array, null given F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 62 行.
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-13 14:11:27') [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-13T14:11:57+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 14:11:57') [ RunTime:0.1080s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match_all(): No ending delimiter '/' found F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 140 行.
+NOTIC: [2] rsort() expects parameter 1 to be array, null given F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 62 行.
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-13 14:11:57') [ RunTime:0.0460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-13T14:12:09+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 14:12:08') [ RunTime:0.1090s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match_all(): No ending delimiter '/' found F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 140 行.
+NOTIC: [2] rsort() expects parameter 1 to be array, null given F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 62 行.
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-13 14:12:09') [ RunTime:0.0650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:13:18+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match_all(): No ending delimiter '/' found F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 140 行.
+NOTIC: [2] rsort() expects parameter 1 to be array, null given F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 14:13:17') [ RunTime:0.1080s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+ERR: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php:141) F:\SoftInstall\xampp\htdocs\Match\sculife\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php:141) F:\SoftInstall\xampp\htdocs\Match\sculife\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2015-11-13T14:13:38+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match_all(): No ending delimiter '/' found F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 140 行.
+NOTIC: [2] rsort() expects parameter 1 to be array, null given F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告,没有最新的消息','2015-11-13 14:13:38') [ RunTime:0.0980s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+ERR: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php:141) F:\SoftInstall\xampp\htdocs\Match\sculife\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php:141) F:\SoftInstall\xampp\htdocs\Match\sculife\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2015-11-13T14:14:23+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:14:25+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:14:40+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-13T14:14:54+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:15:23+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:17:00+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:17:15+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+ERR: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php:141) F:\SoftInstall\xampp\htdocs\Match\sculife\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php:141) F:\SoftInstall\xampp\htdocs\Match\sculife\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2015-11-13T14:17:18+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+ERR: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php:141) F:\SoftInstall\xampp\htdocs\Match\sculife\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php:141) F:\SoftInstall\xampp\htdocs\Match\sculife\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2015-11-13T14:18:35+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:18:36+08:00 ] ::1 /Match/sculife/index.php/Home/(//index.php//main//web//news-group//detail//i//(.+?))
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:(
+
+[ 2015-11-13T14:19:27+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:20:44+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:21:09+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:21:55+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 73 行.
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 84 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:24:21+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-13T14:25:00+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-13 14:24:59','青春川大','团情快讯','<div class=\"content-art\">
+			<h1>四川大学第二十届团校正式启动</h1>
+			<div class=\"attr\">
+				发布时间：2015-11-12 17:57:00  浏览次数：<script type=\"text/javascript\" src=\"/index.php/system/web/view/viewnumber/id/9304\"></script>
+			</div>
+			<div class=\"content-text\">
+				<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 为深入贯彻落实党的十八届三中、四中全会会议精神，认真学习中央关于加强和改进党的群团工作的意见精神，全面提升基层团支部书记的思想政治水平和业务工作能力，加强基层团组织&ldquo;活力提升&rdquo;工程建设，校团委于2015年10月31日，正式启动了四川大学第二十届团校相关工作，全校2015级317名基层团支书参加了本届团校的学习，截至目前已成功开展了六次行课。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" /></span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 31日上午，江安校区综合楼c407教室响起了嘹亮的团歌，校团委组织部工作人员向在场人员宣读了本年度校级团校的考核办法，第二十届团校正式开始。简短的开学典礼结束后，各学院的团支部书记迎来了他们的第一次行课，校团委徐海鑫书记与学员们共同回顾了学生运动和全国学联的发展历史，并对在场的同学提出了殷切的期望：希望他们立足自身工作，不断提升个人综合能力，为基层团组织建设工作贡献自己的力量。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0374.jpg\" style=\"width: 550px; height: 367px;\" /></span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 接下来的行课中校团委袁雯副书记、蒋丽华副书记、黄菲娅老师、罗淼老师和陈姹月老师分别就领导力培养、校园文化建设、新媒体时代下的网络环境以及创新创业等方面向学员们做了详细的介绍和深入的交流。行课过程中学员们认真听讲，积极互动，气氛活跃；课后学员们积极提交心得感想，一字一句充满了对课堂内容的深思和个人独到的见解。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0022.jpg\" style=\"width: 550px; height: 378px;\" /></span></div>
+<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 本次团校的成功开办，不仅加强了校团委与基层团支书之间的交流，更提升了基层团支书的思想境界和业务水平，有利于团支书们在今后基层团组织建设中充分发挥自身优势，积极主动探索，有效提高团组织工作水平以及提升工作实效，对推进基层团组织建设有着十分重要的作用。</span></div>
+<div>
+	&nbsp;</div>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class=\"share\">','9304','四川大学第二十届团校正式启动','http://youth.scu.edu.cn/index.php/main/web/news-group/detail/i/9304'),('2015-11-13 14:25:00','青春川大','团情快讯','<div class=\"content-art\">
+			<h1>在川服务第十七届研究生支教团成员培训暨支教经验分享会圆满举行</h1>
+			<div class=\"attr\">
+				发布时间：2015-11-12 12:13:00  浏览次数：<script type=\"text/javascript\" src=\"/index.php/system/web/view/viewnumber/id/9302\"></script>
+			</div>
+			<div class=\"content-text\">
+				<div>
+	<span style=\"font-size:18px;\"><span style=\"font-family:宋体;\">&nbsp; &nbsp; &nbsp; &nbsp; 在川服务第十七届研究生支教团成员培训暨支教经验分享会于2015年11月9日在四川大学望江校区校史展览馆拉开了帷幕，于10日中午落幕。参加大会的有共青团中央书记处书记汪鸿雁、学校部部长、团中央志工部部长杨松、四川团省委书记刘会英、四川大学党委的李向成书记、徐海鑫书记、各高校的支教团、十七届在川服务研究生支教团成员（共23所高校）、川师闫从华博士等。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size:18px;\"><span style=\"font-family:宋体;\">&nbsp; &nbsp; &nbsp; &nbsp; 自2011年研究生支教团工作并入大学生志愿服务西部计划管理以来，共有来自全国23所高等院校490名支教团成员在我省28个县（市、区）的中小学支教服务。今年，共有来自中国人民大学、同济大学等23所高等院校155名第十七届研究生支教团成员在我省28个县（市、区）的乡、村中小学校开展为期一年的支教志愿服务。支教团成员在支教之余，运用新媒体平台，整合多方资源，积极开展各种活动。</span></span></div>
+<div>
+	<span style=\"font-size:18px;\"><span style=\"font-family:宋体;\">&nbsp; &nbsp; &nbsp; &nbsp; 9日上午9点到11点半，各地参加人员于小憩驿站报到，然后抵达学生一食堂吃午餐。午餐结束后，参会人员进入校史展览馆三楼至公厅，大会正式开始。首先，四川农业大学第一六届研究生支教团队长、曾服务于新疆和田县的姜子义同学进行经验分享。他从&ldquo;融入当地社会，提升教育教学水平&rdquo;、&ldquo;扩展支教意义，探索扶贫助困办法&rdquo;、&ldquo;用心总结经验，助力支教接力传承&rdquo;、&ldquo;直面艰难困苦，扛起时代青年责任&rdquo;四个方面讲述了他的支教工作和感悟。</span></span></div>
+<div>
+	<span style=\"font-size:18px;\"><span style=\"font-family:宋体;\">随后，各支教团以高校为单位分享、总结支教情况，并进行了5分钟左右的交流发言。现场讨论气氛热烈，听众聚精会神。</span></span></div>
+<div>
+	<span style=\"font-size:18px;\"><span style=\"font-family:宋体;\">&nbsp; &nbsp; &nbsp; &nbsp; 交流过后，临近晚餐时间，参会人员来到北苑餐厅吃晚餐，随后又返回校史展览馆的至公厅进行十七届在川服务研究生支教团成员交流讨论。参加讨论的共有23所高校，分别进行了交流发言，互相解答了在支教中遇到的问题及困惑。</span></span></div>
+<div>
+	<span style=\"font-size:18px;\"><span style=\"font-family:宋体;\">其中，四川大学、浙江大学从1999年开始，已在凉山彝族自治州深耕十七年，同济大学2006年到李庄支教，至今也有十年了。此外，支教团高校成员结合实际情况积极探讨，他们发现支教地教育资源不平衡：缺乏老师且流动性很大。而且当地学生大多是留守学生，缺乏关爱、视野狭窄、思想懈怠。自此他们认识到这是一个长期的过程： &ldquo;扶贫先扶智&rdquo;、&ldquo;十年树木，百年树人&rdquo;。支教团成员积极融入当地，实现从学生到教师的身份转变，组织实施各项公益活动，结对帮扶，真正做到&ldquo;学高为师，德高为范&rdquo;。</span></span></div>
+<div>
+	<span style=\"font-size:18px;\"><span style=\"font-family:宋体;\">&nbsp; &nbsp; &nbsp; &nbsp; 10日上午，共青团中央书记处书记汪鸿雁在团中央志工部部长杨松、四川团省委书记刘会英、四川大学党委副书记李向成的陪同下莅临四川大学望江校区，亲切看望参加支教培训的在川服务第十七届研究生支教团成员。</span></span></div>
+<div>
+	<span style=\"font-size:18px;\"><span style=\"font-family:宋体;\">&nbsp; &nbsp; &nbsp; &nbsp; 汪鸿雁书记一行来到四川大学校史展览馆三楼至公厅与在川服务第十七届研究生支教团全体成员见面，详细询问了在川服务第十七届研究生支教团成员代表的支教、生活等情况。受汪鸿雁书记委托，杨松部长代表团中央向在川服务第十七届研究生支教团成员送上祝福，希望支教团成员用实际行动践行&ldquo;奉献、友爱、互助、进步&rdquo;的志愿者精神，用最真诚的爱守护大山的希望，用最真挚的心呵护孩子们的梦想，让这一年青春无悔。</span></span></div>
+<div>
+	<span style=\"font-size:18px;\"><span style=\"font-family:宋体;\">随后，闫从华博士（四川师范大学第二届研究生支教团成员）分享了自己当年在茂县中学支教的经历、在民族地区支教的经验和教学技巧，勉励第十七届研究生支教团成员们坚信自己的无悔选择，用心付出。在川服务第十七届研究生支教团成员培训暨支教经验分享会圆满落幕。</span></span></div>
+<div>
+	<span style=\"font-size:18px;\"><span style=\"font-family: 宋体;\">&nbsp; &nbsp; &nbsp; &nbsp; 此次活动用实际行动践行者&ldquo;风险、友爱、互助、进步&rdquo;的志愿者精神，为支教地改革发展献计献策，极大地促进了地方志愿服务事业的发展。</span></span></div>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class=\"share\">','9302','在川服务第十七届研究生支教团成员培训暨支教经验分享会圆满举行','http://youth.scu.edu.cn/index.php/main/web/news-group/detail/i/9302') [ RunTime:0.1380s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯，最新消息抓取成功','2015-11-13 14:25:00') [ RunTime:0.0670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:25:08+08:00 ] ::1 /Match/sculife/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY id DESC LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:25:12+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/234.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=234 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:28:36+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/234.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=234 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:29:42+08:00 ] ::1 /Match/sculife/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY number DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY number DESC LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:29:49+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/233.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=233 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:31:14+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0020s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-13 14:31:14','青春川大','团情快讯','<div class=\"content-art\">
+			<h1>四川大学第二十届团校正式启动</h1>
+			<div class=\"attr\">
+				发布时间：2015-11-12 17:57:00  浏览次数：<script type=\"text/javascript\" src=\"/index.php/system/web/view/viewnumber/id/9304\"></script>
+			</div>
+			<div class=\"content-text\">
+				<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 为深入贯彻落实党的十八届三中、四中全会会议精神，认真学习中央关于加强和改进党的群团工作的意见精神，全面提升基层团支部书记的思想政治水平和业务工作能力，加强基层团组织&ldquo;活力提升&rdquo;工程建设，校团委于2015年10月31日，正式启动了四川大学第二十届团校相关工作，全校2015级317名基层团支书参加了本届团校的学习，截至目前已成功开展了六次行课。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" /></span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 31日上午，江安校区综合楼c407教室响起了嘹亮的团歌，校团委组织部工作人员向在场人员宣读了本年度校级团校的考核办法，第二十届团校正式开始。简短的开学典礼结束后，各学院的团支部书记迎来了他们的第一次行课，校团委徐海鑫书记与学员们共同回顾了学生运动和全国学联的发展历史，并对在场的同学提出了殷切的期望：希望他们立足自身工作，不断提升个人综合能力，为基层团组织建设工作贡献自己的力量。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0374.jpg\" style=\"width: 550px; height: 367px;\" /></span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 接下来的行课中校团委袁雯副书记、蒋丽华副书记、黄菲娅老师、罗淼老师和陈姹月老师分别就领导力培养、校园文化建设、新媒体时代下的网络环境以及创新创业等方面向学员们做了详细的介绍和深入的交流。行课过程中学员们认真听讲，积极互动，气氛活跃；课后学员们积极提交心得感想，一字一句充满了对课堂内容的深思和个人独到的见解。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0022.jpg\" style=\"width: 550px; height: 378px;\" /></span></div>
+<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 本次团校的成功开办，不仅加强了校团委与基层团支书之间的交流，更提升了基层团支书的思想境界和业务水平，有利于团支书们在今后基层团组织建设中充分发挥自身优势，积极主动探索，有效提高团组织工作水平以及提升工作实效，对推进基层团组织建设有着十分重要的作用。</span></div>
+<div>
+	&nbsp;</div>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class=\"share\">','9304','四川大学第二十届团校正式启动','http://youth.scu.edu.cn/index.php/main/web/news-group/detail/i/9304') [ RunTime:0.1230s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯，最新消息抓取成功','2015-11-13 14:31:14') [ RunTime:0.0750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:31:18+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/233.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=233 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\IndexController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:31:20+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/233.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=233 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\IndexController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-13T14:31:22+08:00 ] ::1 /Match/sculife/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY number DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY number DESC LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:31:24+08:00 ] ::1 /Match/sculife/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY number DESC LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY number DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-13T14:31:28+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/235.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=235 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:31:31+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/235.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=235 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:31:54+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 71 行.
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-13 14:31:54','青春川大','团情快讯','<div class=\"content-art\">
+			<h1>四川大学第二十届团校正式启动</h1>
+			<div class=\"attr\">
+				发布时间：2015-11-12 17:57:00  浏览次数：<script type=\"text/javascript\" src=\"/index.php/system/web/view/viewnumber/id/9304\"></script>
+			</div>
+			<div class=\"content-text\">
+				<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 为深入贯彻落实党的十八届三中、四中全会会议精神，认真学习中央关于加强和改进党的群团工作的意见精神，全面提升基层团支部书记的思想政治水平和业务工作能力，加强基层团组织&ldquo;活力提升&rdquo;工程建设，校团委于2015年10月31日，正式启动了四川大学第二十届团校相关工作，全校2015级317名基层团支书参加了本届团校的学习，截至目前已成功开展了六次行课。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 31日上午，江安校区综合楼c407教室响起了嘹亮的团歌，校团委组织部工作人员向在场人员宣读了本年度校级团校的考核办法，第二十届团校正式开始。简短的开学典礼结束后，各学院的团支部书记迎来了他们的第一次行课，校团委徐海鑫书记与学员们共同回顾了学生运动和全国学联的发展历史，并对在场的同学提出了殷切的期望：希望他们立足自身工作，不断提升个人综合能力，为基层团组织建设工作贡献自己的力量。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 接下来的行课中校团委袁雯副书记、蒋丽华副书记、黄菲娅老师、罗淼老师和陈姹月老师分别就领导力培养、校园文化建设、新媒体时代下的网络环境以及创新创业等方面向学员们做了详细的介绍和深入的交流。行课过程中学员们认真听讲，积极互动，气氛活跃；课后学员们积极提交心得感想，一字一句充满了对课堂内容的深思和个人独到的见解。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 本次团校的成功开办，不仅加强了校团委与基层团支书之间的交流，更提升了基层团支书的思想境界和业务水平，有利于团支书们在今后基层团组织建设中充分发挥自身优势，积极主动探索，有效提高团组织工作水平以及提升工作实效，对推进基层团组织建设有着十分重要的作用。</span></div>
+<div>
+	&nbsp;</div>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class=\"share\">','9304','四川大学第二十届团校正式启动','http://youth.scu.edu.cn/index.php/main/web/news-group/detail/i/9304') [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯，最新消息抓取成功','2015-11-13 14:31:54') [ RunTime:0.0520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-13T14:31:58+08:00 ] ::1 /Match/sculife/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY number DESC LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY number DESC LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:32:00+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/236.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=236 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:32:58+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mainSite F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleBaseController.class.php 第 72 行.
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-13 14:32:58','青春川大','团情快讯','<div class=\"content-art\">
+			<h1>四川大学第二十届团校正式启动</h1>
+			<div class=\"attr\">
+				发布时间：2015-11-12 17:57:00  浏览次数：<script type=\"text/javascript\" src=\"/index.php/system/web/view/viewnumber/id/9304\"></script>
+			</div>
+			<div class=\"content-text\">
+				<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 为深入贯彻落实党的十八届三中、四中全会会议精神，认真学习中央关于加强和改进党的群团工作的意见精神，全面提升基层团支部书记的思想政治水平和业务工作能力，加强基层团组织&ldquo;活力提升&rdquo;工程建设，校团委于2015年10月31日，正式启动了四川大学第二十届团校相关工作，全校2015级317名基层团支书参加了本届团校的学习，截至目前已成功开展了六次行课。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 31日上午，江安校区综合楼c407教室响起了嘹亮的团歌，校团委组织部工作人员向在场人员宣读了本年度校级团校的考核办法，第二十届团校正式开始。简短的开学典礼结束后，各学院的团支部书记迎来了他们的第一次行课，校团委徐海鑫书记与学员们共同回顾了学生运动和全国学联的发展历史，并对在场的同学提出了殷切的期望：希望他们立足自身工作，不断提升个人综合能力，为基层团组织建设工作贡献自己的力量。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 接下来的行课中校团委袁雯副书记、蒋丽华副书记、黄菲娅老师、罗淼老师和陈姹月老师分别就领导力培养、校园文化建设、新媒体时代下的网络环境以及创新创业等方面向学员们做了详细的介绍和深入的交流。行课过程中学员们认真听讲，积极互动，气氛活跃；课后学员们积极提交心得感想，一字一句充满了对课堂内容的深思和个人独到的见解。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 本次团校的成功开办，不仅加强了校团委与基层团支书之间的交流，更提升了基层团支书的思想境界和业务水平，有利于团支书们在今后基层团组织建设中充分发挥自身优势，积极主动探索，有效提高团组织工作水平以及提升工作实效，对推进基层团组织建设有着十分重要的作用。</span></div>
+<div>
+	&nbsp;</div>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class=\"share\">','9304','四川大学第二十届团校正式启动','http://youth.scu.edu.cn/index.php/main/web/news-group/detail/i/9304') [ RunTime:0.1580s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯，最新消息抓取成功','2015-11-13 14:32:58') [ RunTime:0.0660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:33:15+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0060s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-13 14:33:14') [ RunTime:0.1050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:33:37+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/235.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=235 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\IndexController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:34:07+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config` WHERE ( id=3 )  [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-13 14:34:07','青春川大','团情快讯','<div class=\"content-art\">
+			<h1>四川大学第二十届团校正式启动</h1>
+			<div class=\"attr\">
+				发布时间：2015-11-12 17:57:00  浏览次数：<script type=\"text/javascript\" src=\"/index.php/system/web/view/viewnumber/id/9304\"></script>
+			</div>
+			<div class=\"content-text\">
+				<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 为深入贯彻落实党的十八届三中、四中全会会议精神，认真学习中央关于加强和改进党的群团工作的意见精神，全面提升基层团支部书记的思想政治水平和业务工作能力，加强基层团组织&ldquo;活力提升&rdquo;工程建设，校团委于2015年10月31日，正式启动了四川大学第二十届团校相关工作，全校2015级317名基层团支书参加了本届团校的学习，截至目前已成功开展了六次行课。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"http://youth.scu.edu.cn/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 31日上午，江安校区综合楼c407教室响起了嘹亮的团歌，校团委组织部工作人员向在场人员宣读了本年度校级团校的考核办法，第二十届团校正式开始。简短的开学典礼结束后，各学院的团支部书记迎来了他们的第一次行课，校团委徐海鑫书记与学员们共同回顾了学生运动和全国学联的发展历史，并对在场的同学提出了殷切的期望：希望他们立足自身工作，不断提升个人综合能力，为基层团组织建设工作贡献自己的力量。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"http://youth.scu.edu.cn/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div>
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 接下来的行课中校团委袁雯副书记、蒋丽华副书记、黄菲娅老师、罗淼老师和陈姹月老师分别就领导力培养、校园文化建设、新媒体时代下的网络环境以及创新创业等方面向学员们做了详细的介绍和深入的交流。行课过程中学员们认真听讲，积极互动，气氛活跃；课后学员们积极提交心得感想，一字一句充满了对课堂内容的深思和个人独到的见解。</span></div>
+<div style=\"text-align: center;\">
+	<span style=\"font-size:18px;\"><img alt=\"\" src=\"http://youth.scu.edu.cn/uploads/up/default/img_0343.jpg\" style=\"width: 550px; height: 367px;\" />\"</span></div>
+<div align=\"left\">
+	<span style=\"font-size:18px;\">&nbsp; &nbsp; &nbsp; &nbsp; 本次团校的成功开办，不仅加强了校团委与基层团支书之间的交流，更提升了基层团支书的思想境界和业务水平，有利于团支书们在今后基层团组织建设中充分发挥自身优势，积极主动探索，有效提高团组织工作水平以及提升工作实效，对推进基层团组织建设有着十分重要的作用。</span></div>
+<div>
+	&nbsp;</div>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class=\"share\">','9304','四川大学第二十届团校正式启动','http://youth.scu.edu.cn/index.php/main/web/news-group/detail/i/9304') [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯，最新消息抓取成功','2015-11-13 14:34:07') [ RunTime:0.0730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-13T14:34:11+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/236.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=236 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\IndexController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:34:12+08:00 ] ::1 /Match/sculife/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY number DESC LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY number DESC LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:34:14+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/238.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=238 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-13T14:36:02+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:36:04+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:36:35+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:36:36+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-13T14:36:41+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_config`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:41:47+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+SQL: SELECT * FROM `sculife_config` ORDER BY id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:42:28+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+SQL: SELECT * FROM `sculife_config` ORDER BY id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:42:29+08:00 ] ::1 /Match/sculife/index.php/Home/(//index.php//main//web//news-group//detail//i//(.+?))
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:(
+
+[ 2015-11-13T14:43:00+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+SQL: SELECT * FROM `sculife_config` ORDER BY id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:43:34+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+SQL: SELECT * FROM `sculife_config` ORDER BY id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:43:36+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+SQL: SELECT * FROM `sculife_config` ORDER BY id DESC  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:43:54+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+SQL: SELECT * FROM `sculife_config` ORDER BY id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T14:44:03+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 7 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 59 行.
+SQL: SELECT * FROM `sculife_config` ORDER BY id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:49:00+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sculife_config` (`mainsite`,`name`,`url`,`tag`,`category`,`pattern`) VALUES ('http://xsc.scu.edu.cn','xsc','http://xsc.scu.edu.cn/','学工部','新闻','/<a href=\"(\\/News_Detail\\.aspx\\?article_ID=(\\d+)\\&menu_id=42)\" target=_blank>(.+?)<\\/a>/#/<div id=\"DivContent\" align=\"left\">[\\s\\S]*<\\/div>[\\s]+<\\/td>/') [ RunTime:0.0690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T14:49:39+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sculife_config` (`mainsite`,`name`,`url`,`tag`,`category`,`pattern`) VALUES ('http://xsc.scu.edu.cn','xsc','http://xsc.scu.edu.cn/','学工部','公告','/<a href=\"(\\/News_Detail\\.aspx\\?article_ID=(\\d+)\\&menu_id=43)\" target=_blank>(.+?)<\\/a>/#/<div id=\"DivContent\" align=\"left\">[\\s\\S]*<\\/div>[\\s]+<\\/td>/') [ RunTime:0.1060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-13T15:10:02+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014001s ]
+
+[ 2015-11-13T15:10:08+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T15:12:26+08:00 ] ::1 /Match/sculife/index.php/Home/spider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\ArticleController::spiderArticle(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 11 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleController.class.php 第 12 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\ArticleController::spiderArticle(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\SpiderController.class.php on line 11 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleController.class.php 第 12 行.
+NOTIC: [8] Undefined variable: tag F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: category F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleController.class.php 第 14 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleController.class.php on line 14 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 65 行.
+SQL: SELECT * FROM `sculife_config` WHERE `tag` = null AND `category` = null ORDER BY id DESC  [ RunTime:0.0000s ]
+
+[ 2015-11-13T15:16:35+08:00 ] ::1 /Match/sculife/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY number DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY number DESC LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-13T15:16:40+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/238.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=238 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
