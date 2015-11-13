@@ -5,7 +5,7 @@
  */
 namespace Home\Controller;
 use Think\Controller;
-class AdminController extends Controller {
+class AdminController extends AdminBaseController {
 
     public function index(){
 
@@ -39,6 +39,7 @@ class AdminController extends Controller {
         $this->assign('config',$config);
         $this->display();
     }
+
 
     public function spider($tag='',$category=''){
         $spider=new ArticleController();
