@@ -7,7 +7,7 @@
 	<title>login-sculife</title>
 	<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	-->
-	<link rel="stylesheet" type="text/css" href="__PULIC__/css/default.css">
+	<link rel="stylesheet" type="text/css" href="/Match/sculife/Public/css/default.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
 	<style type="text/css">
 	html,

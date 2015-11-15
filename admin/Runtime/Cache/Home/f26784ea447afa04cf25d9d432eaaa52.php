@@ -14,6 +14,8 @@
       <link rel="stylesheet" href="/Match/sculife/Public/css/amazeui.min.css">
       <link rel="stylesheet" href="/Match/sculife/Public/css/admin.css">
       
+    <link rel="stylesheet" type="text/css" href="/Match/sculife/Public/css/tooltip.css">
+
   </head>
   <body>
       <!--[if lte IE 9]>
@@ -26,7 +28,7 @@
   <![endif]-->
       
     <header class="am-topbar admin-header">
-		<div class="am-topbar-brand"> <strong>sculife</strong>
+<div class="am-topbar-brand"> <a href="<?php echo U('Index/index');?>"><strong>sculife</strong></a>
 			<small>后台管理</small>
 		</div>
 
@@ -59,7 +61,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="<?php echo U('Admin/logout');?>">
 								<span class="am-icon-power-off"></span>
 								退出
 							</a>
@@ -79,6 +81,7 @@
       
       
     <div class="am-cf admin-main">
+        
         <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
         <ul class="am-list admin-sidebar-list">
@@ -89,7 +92,7 @@
                 </a>
             </li>
             <li>
-               <a href="<?php echo U('Admin/system');?>">
+               <a href="<?php echo U('Admin/systemConfig');?>">
                     <span class="am-icon-cog"></span>
                     系统设置
                </a>
@@ -146,7 +149,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<?php echo U('Admin/logout');?>">
                     <span class="am-icon-sign-out"></span>
                     注销
                 </a>
@@ -186,7 +189,7 @@
 </div>
 <ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
     <li>
-        <a href="<?php echo U('Admin/system?system=list');?>" class="am-text-success">
+        <a href="<?php echo U('Admin/systemConfig?system=list');?>" class="am-text-success">
             <span class="am-icon-btn am-icon-file-text-o"></span>
             <br/>
             网站列表
@@ -194,7 +197,7 @@
         </a>
     </li>
     <li>
-        <a href="<?php echo U('Admin/system?system=add');?>" class="am-text-warning">
+        <a href="<?php echo U('Admin/systemConfig?system=add');?>" class="am-text-warning">
             <span class="am-icon-btn am-icon-pencil-square-o"></span>
             <br/>
             添加网站
@@ -222,8 +225,9 @@
             <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
         </div>
         <div class="am-modal-bd">
-            <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a class="am-btn am-btn-xs am-btn-primary" href="<?php echo U('Admin/spider',array('tag'=>vo['tag'],'category'=>vo['category']));?>"><?php echo ($vo["tag"]); echo ($vo["category"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
-            <a class="am-btn am-btn-xs am-btn-success" href="<?php echo U('Admin/spider');?>">获取全部消息</a>
+        <!-- 注意这里别忘了添加$符号 -->
+            <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><button class="spider am-btn am-btn-xs am-btn-primary" url="<?php echo U('Admin/spider',array('tag'=>$vo['tag'],'category'=>$vo['category']));?>" ><?php echo ($vo["tag"]); echo ($vo["category"]); ?></button><?php endforeach; endif; else: echo "" ;endif; ?>
+            <button class="spider am-btn am-btn-xs am-btn-success" url="<?php echo U('Admin/spider');?>">获取全部消息</button>
         </div>
     </div>
 </div>
@@ -321,5 +325,32 @@
 	<script src="/Match/sculife/Public/js/app.js"></script>
 
       
+<script src="/Match/sculife/Public/js/tooltip.js"></script>
+ <script type="text/javascript">
+   
+    /**
+     * 将手动抓取数据改成ajax交互，大大提高交互体验
+     */
+    $(".spider").unbind("click").click(function(){
+        var btn=$(this);
+        btn.button('loading');
+        var url=btn.attr('url');
+        $.get(url,function(data,status){
+            if(data.status==1){
+                 $('body').tooltip({
+                  autoshow: true,
+                  content: data.message,
+                  style:'success',
+                  duration:1000,
+                  zIndex:9999
+                });
+                btn.button('reset');
+            } 
+        });
+    });
+
+    
+</script>   
+
   </body>
 </html>

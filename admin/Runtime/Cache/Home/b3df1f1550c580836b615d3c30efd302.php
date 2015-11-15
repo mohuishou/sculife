@@ -89,7 +89,7 @@
                 </a>
             </li>
             <li>
-               <a href="<?php echo U('Admin/system');?>">
+               <a href="<?php echo U('Admin/systemConfig');?>">
                     <span class="am-icon-cog"></span>
                     系统设置
                </a>

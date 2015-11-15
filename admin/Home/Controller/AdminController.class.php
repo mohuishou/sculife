@@ -31,13 +31,13 @@ class AdminController extends AdminBaseController {
 
     }
 
-    public function system(){
+    public function systemConfig(){
         $handle=new HandleController();
         $config=$handle->getConfig();
         $category=$handle->getCategory();
         $this->assign('category',$category);
         $this->assign('config',$config);
-        $this->display();
+        $this->display('system');
     }
 
 
