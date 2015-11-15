@@ -235,26 +235,26 @@
     <div class="am-panel am-panel-primary">
         <div class="am-panel-hd">添加网站</div>
         <div class="am-panel-bd am-scrollable-horizontal ">
-            <form class="am-form  " >
+            <form id="addConfig" class="am-form  " >
                 <div class="am-form-group">
                     <label>网站名</label>
-                    <input type="text" name="tag" class=""  placeholder="如：青春川大">
+                    <input required type="text" name="tag" class=""  placeholder="如：青春川大">
                 </div>
                 <div class="am-form-group">
                     <label>分类</label>
-                    <input type="text" name="category" class=""  placeholder="如：公告">
+                    <input id="category" required type="text" name="category" class=""  placeholder="如：公告">
                 </div>
                 <div class="am-form-group">
                     <label>网站主域名</label>
-                    <input type="text" name="mainsite" class=""  placeholder="如：http://youth.scu.edu.cn/">
+                    <input pattern="(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?" data-validation-message="请输入正确的网址，包含http://" required type="text" name="mainsite" class=""  placeholder="如：http://youth.scu.edu.cn/">
                 </div>
                 <div class="am-form-group">
                     <label>需要抓取的详细地址</label>
-                    <input type="text" class="" name="url"  placeholder="如：http://youth.scu.edu.cn/index.php/main/web/notice">
+                    <input pattern="(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?" data-validation-message="请输入正确的网址，包含http://" required type="text" class="" name="url"  placeholder="如：http://youth.scu.edu.cn/index.php/main/web/notice">
                 </div>
                 <div class="am-form-group">
                     <label>正则（包含//，以#分割）</label>
-                            <textarea name="pattern"  rows="5" placeholder='如：/<a href="(\/index.php\/main\/web\/notice\/detail\/i\/(.+?))">(.+?)<\/a>/
+                            <textarea required name="pattern"  rows="5" placeholder='如：/<a href="(\/index.php\/main\/web\/notice\/detail\/i\/(.+?))">(.+?)<\/a>/
                                 #/<div class="content-art">[\s\S]*<div class="share">/
                                 #/\/uploads.+?>/'></textarea>
                     <p>注意: 前两条必须有，分别是目录的抓取以及详细文章的抓取，第三条是用于转换文章中链接的路径的</p>
@@ -327,7 +327,26 @@
       
 <script src="/Match/sculife/Public/js/tooltip.js"></script>
  <script type="text/javascript">
-   
+    $(document).ready(function(){ 
+      $("#addConfig").submit(function(){  //当提交的时候 ajax 验证完就停止
+        addConfig();
+        return false;
+      });
+
+    });
+
+    $('#category').focus(function(){
+      $.get("/Match/sculife/index.php/Home/Admin/addConfig",function(data,status){
+        
+      });
+    });
+
+    /*------------------增加网站的ajax提交-------------------------*/
+    function addConfig(){
+
+    }
+
+
     /**
      * 将手动抓取数据改成ajax交互，大大提高交互体验
      */
@@ -349,6 +368,30 @@
         });
     });
 
+
+    /*----表单的验证---*/
+    $(function() {     
+      $("#addConfig").validator({
+        onValid: function(validity) {
+          $(validity.field).closest('.am-form-group').find('.am-alert').hide();
+        },
+
+        onInValid: function(validity) {
+          var $field = $(validity.field);
+          var $group = $field.closest('.am-form-group');
+          var $alert = $group.find('.am-alert');
+          // 使用自定义的提示信息 或 插件内置的提示信息
+          var msg = $field.data('validationMessage') || this.getValidationMessage(validity);
+
+          if (!$alert.length) {
+            $alert = $('<div class="am-alert am-alert-danger"></div>').hide().
+              appendTo($group);
+          }
+
+          $alert.html(msg).show();
+        }
+      });
+    });
     
 </script>   
 

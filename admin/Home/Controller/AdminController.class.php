@@ -40,6 +40,20 @@ class AdminController extends AdminBaseController {
         $this->display('system');
     }
 
+    public function addConfig(){
+        $handle=new HandleController();
+        $category=$handle->getCategory();
+        $this->ajaxReturn($category);
+        // $User = M("User"); // 实例化User对象
+        // // 根据表单提交的POST数据创建数据对象
+        // if($User->create()){
+        //     $result = $User->add(); // 写入数据到数据库 
+        //     if($result){
+        //         // 如果主键是自动增长型 成功后返回值就是最新插入的值
+        //         $insertId = $result;
+        //     }
+        // }
+    }
 
     public function spider($tag='',$category=''){
         $spider=new ArticleController();

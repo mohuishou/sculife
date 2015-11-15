@@ -65,6 +65,10 @@ class HandleBaseController extends Controller {
         $data=$config->where($map)->order('id DESC')->limit($limit)->select();
         foreach($data as $k => $v){
             $pattern=explode('#',trim($v['pattern']));
+            foreach($pattern as $key => $val){
+                $pattern[$key]=trim($val);
+            }
+
 //            print_r($pattern);
             $data[$k]['pattern']=$pattern;
         }
@@ -77,5 +81,7 @@ class HandleBaseController extends Controller {
         $data=$category->where($map)->order('id DESC')->limit($limit)->select();
         return $data;
     }
+
+  
 
 }
