@@ -11,10 +11,10 @@
       <meta name="mobile-web-app-capable" content="yes">
       <meta name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <link rel="stylesheet" href="/Match/sculife/Public/css/amazeui.min.css">
-      <link rel="stylesheet" href="/Match/sculife/Public/css/admin.css">
+      <link rel="stylesheet" href="/Match/sculife-material/Public/css/amazeui.min.css">
+      <link rel="stylesheet" href="/Match/sculife-material/Public/css/admin.css">
       
-    <link rel="stylesheet" type="text/css" href="/Match/sculife/Public/css/tooltip.css">
+    <link rel="stylesheet" type="text/css" href="/Match/sculife-material/Public/css/tooltip.css">
 
   </head>
   <body>
@@ -97,53 +97,27 @@
                     系统设置
                </a>
             </li>
+            <?php if(is_array($side)): $i = 0; $__LIST__ = $side;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+                    <a class="am-cf"  data-am-collapse="{target: '#notice-nav<?php echo ($vo["id"]); ?>'}">
+                        <span class="am-icon-file"></span>
+                        <?php echo ($vo["name"]); ?>
+                        <span class="am-icon-angle-right am-fr am-margin-right"></span>
+                    </a>
+                    <ul class="am-list am-collapse admin-sidebar-sub am-in" id="notice-nav<?php echo ($vo["id"]); ?>">
+                        <?php if(is_array($vo['son'])): $i = 0; $__LIST__ = $vo['son'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li>
+                                <a href="<?php echo U('Admin/article',array('tid'=>$v['id'],'action'=>'article'));?>" class="am-cf">
+                                    <span class="am-icon-file-text-o"></span>
+                                    <?php echo ($v["name"]); ?>
+                                </a>
+                            </li><?php endforeach; endif; else: echo "" ;endif; ?>
 
-            <li>
-                <a class="am-cf" data-am-collapse="{target: '#notice-nav'}">
-                    <span class="am-icon-file"></span>
-                    公告
-                    <span class="am-icon-angle-right am-fr am-margin-right"></span>
-                </a>
-                <ul class="am-list am-collapse admin-sidebar-sub am-in" id="notice-nav">
-                    <li>
-                        <a href="<?php echo U('Admin/notice?tag=youth');?>" class="am-cf">
-                            <span class="am-icon-file-text-o"></span>
-                            青春川大
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo U('Admin/notice?tag=xsc');?>">
-                            <span class="am-icon-pencil-square-o"></span>
-                            学工部
-                        </a>
-                    </li>
-                </ul>
-            </li>
+                    </ul>
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+
 
 
             <li>
-                <a class="am-cf" data-am-collapse="{target: '#news-nav'}">
-                    <span class="am-icon-file"></span>
-                   新闻
-                    <span class="am-icon-angle-right am-fr am-margin-right"></span>
-                </a>
-                <ul class="am-list am-collapse admin-sidebar-sub am-in" id="news-nav">
-                    <li>
-                        <a href="<?php echo U('Admin/news?tag=youth');?>" class="am-cf">
-                            <span class=" am-icon-file-text-o"></span>
-                            青春川大
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo U('Admin/news?tag=xsc');?>">
-                            <span class=" am-icon-pencil-square-o"></span>
-                            学工部
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="<?php echo U('Admin/log?tag=log');?>">
+                <a href="<?php echo U('Admin/log?action=log');?>">
                     <span class="am-icon-pencil-square-o"></span>
                     日志
                 </a>
@@ -212,25 +186,14 @@
         </a>
     </li>
     <li>
-        <a data-am-modal="{target: '#spider',  width: 400, height: 225}" class="am-text-secondary">
+        <a url="/Match/sculife-material/index.php/Home/Admin/spider" data-am-modal="{target: '#spider',  width: 400, height: 225}" class="spider am-text-secondary">
             <span class="am-icon-btn am-icon-circle-o"></span>
             <br/>
-           手动抓取文章
+           手动抓取所有文章
         </a>
     </li>
 </ul>
-<div class="am-modal am-modal-no-btn" tabindex="-1" id="spider">
-    <div class="am-modal-dialog">
-        <div class="am-modal-hd">手动获取数据
-            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
-        </div>
-        <div class="am-modal-bd">
-        <!-- 注意这里别忘了添加$符号 -->
-            <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><button class="spider am-btn am-btn-xs am-btn-primary" url="<?php echo U('Admin/spider',array('tag'=>$vo['tag'],'category'=>$vo['category']));?>" ><?php echo ($vo["tag"]); echo ($vo["category"]); ?></button><?php endforeach; endif; else: echo "" ;endif; ?>
-            <button class="spider am-btn am-btn-xs am-btn-success" url="<?php echo U('Admin/spider');?>">获取全部消息</button>
-        </div>
-    </div>
-</div>
+
                 <?php switch($_GET['system']): case "add": ?><div class="am-u-md-8 am-u-sm-12">
     <div class="am-panel am-panel-primary">
         <div class="am-panel-hd">添加网站</div>
@@ -314,18 +277,18 @@
 	<!--[if lt IE 9]>
 	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-	<script src="/Match/sculife/Public/js/amazeui.ie8polyfill.min.js"></script>
+	<script src="/Match/sculife-material/Public/js/amazeui.ie8polyfill.min.js"></script>
 	<![endif]-->
 
 	<!--[if (gte IE 9)|!(IE)]>
 	<!-->
-	<script src="/Match/sculife/Public/js/jquery.min.js"></script>
+	<script src="/Match/sculife-material/Public/js/jquery.min.js"></script>
 	<!--<![endif]-->
-	<script src="/Match/sculife/Public/js/amazeui.min.js"></script>
-	<script src="/Match/sculife/Public/js/app.js"></script>
+	<script src="/Match/sculife-material/Public/js/amazeui.min.js"></script>
+	<script src="/Match/sculife-material/Public/js/app.js"></script>
 
       
-<script src="/Match/sculife/Public/js/tooltip.js"></script>
+<script src="/Match/sculife-material/Public/js/tooltip.js"></script>
  <script type="text/javascript">
     $(document).ready(function(){ 
       $("#addConfig").submit(function(){  //当提交的时候 ajax 验证完就停止
@@ -336,7 +299,7 @@
     });
 
     $('#category').focus(function(){
-      $.get("/Match/sculife/index.php/Home/Admin/addConfig",function(data,status){
+      $.get("/Match/sculife-material/index.php/Home/Admin/addConfig",function(data,status){
         
       });
     });

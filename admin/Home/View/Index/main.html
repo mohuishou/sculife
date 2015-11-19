@@ -1,55 +1,36 @@
-<div id="main" class="am-g am-g-fixed">
-    <div class="am-u-md-12">
-        <p class="am-text-center am-margin-top">在这里你可以看到最新最快的川大信息</p>
-    </div>
-    <!--选项卡开始-->
-    <div class="am-u-md-12">
-        <div data-am-widget="tabs"
-             class="am-tabs am-tabs-default"
-                >
-            <ul class="am-tabs-nav am-cf">
-                <li class="am-active"><a href="[data-tab-panel-0]">青春川大</a></li>
-                <li class=""><a href="[data-tab-panel-1]">学工部</a></li>
-                <li class=""><a href="[data-tab-panel-2]">教务处</a></li>
-            </ul>
-            <div class="am-tabs-bd">
-                <div data-tab-panel-0 class="am-tab-panel am-active">
-                    <ul class="am-list">
-                        <volist name="youth" id="vo">
-                            <li data-am-scrollspy="{animation:'scale-up',delay:'300'}">
-                                <a href='{:U("Index/article",array("id"=>$vo["id"]))}'>{$vo.title}</a>
-                                <div class="list-tag"><span class="am-icon-tag"></span><span>{$vo.category}</span></div>
-                            </li>
-                        </volist>
-                        <div style="text-align: right;margin-top:5px;">
-                            <a >更多:</a>
-                            <a class="am-btn am-btn-default" href="{:U('Index/notice?tag=youth')}">公告</a>
-                            <a class="am-btn am-btn-default" href="{:U('Index/news?tag=youth')}">团情快讯</a>
-                        </div>
-
-                    </ul>
-                </div>
-                <div data-tab-panel-1 class="am-tab-panel ">
-                    <ul class="am-list">
-                        <volist name="xsc" id="vo">
-                            <li data-am-scrollspy="{animation:'scale-up',delay:'300'}">
-                                <a href='{:U("Index/article",array("id"=>$vo["id"]))}'>{$vo.title}</a>
-                                <div class="list-tag"><span class="am-icon-tag"></span><span>{$vo.category}</span></div>
-                            </li>
-                        </volist>
-
-                    </ul>
-                    <div style="text-align: right;margin-top:5px;">
-                        <a >更多:</a>
-                        <a class="am-btn am-btn-default" href="{:U('Index/notice?tag=xsc')}">公告</a>
-                        <a class="am-btn am-btn-default" href="{:U('Index/news?tag=xsc')}">新闻</a>
-                    </div>
-                </div>
-                <div data-tab-panel-2 class="am-tab-panel ">
-                    建设中。。。敬请期待
-                </div>
-            </div>
+<div class="parallax-container">
+    <div class="parallax"><img src="__PUBLIC__/img/banner-1.jpg"></div>
+    <div class=""></div>
+</div>
+<div class="section white ">
+    <div class="row container">
+        <div class="col s12 m6">
+            <h2 class="header">SCULIFE公告牌</h2>
+            <p class="grey-text text-darken-3 lighten-3">这里有你能用到的全川大所有的官方公告，如果没有请<a class="main-a truncate hoverable waves-effect waves-teal" href="mailto:1@lailin.xyz">联系我们</a></p>
+        </div>
+        <div class="main-number col s12 m6">
+            <volist name="notice" id="vo">
+                <a href='{:U("Index/article",array("id"=>$vo["id"]))}' class="main-a truncate hoverable ">{$vo.title}</a>
+            </volist>
         </div>
     </div>
-    <!--选项卡结束-->
+</div>
+<div class="parallax-container">
+    <div class="parallax"><img src="__PUBLIC__/img/banner-2.jpg"></div>
+</div>
+<div class="section white">
+    <div class="row container">
+        <div class="col s12 m6">
+            <h2 class="header">SCULIFE新闻榜</h2>
+            <p class="grey-text text-darken-3 lighten-3">这里有你想看到的全川大所有的官方新闻，如果没有请<a  class="main-a truncate hoverable waves-effect waves-teal"  href="mailto:1@lailin.xyz">联系我们</a></p>
+        </div>
+        <div class="main-number col s12 m6">
+            <volist name="news" id="vo">
+                <a href='{:U("Index/article",array("id"=>$vo["id"]))}' class="main-a truncate hoverable ">{$vo.title}</a>
+            </volist>
+        </div>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax"><img src="__PUBLIC__/img/banner-3.jpg"></div>
 </div>

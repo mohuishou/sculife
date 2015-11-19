@@ -1,45 +1,33 @@
 <!--header开始-->
-<header >
-    <div class="header  am-topbar">
-        <div class="am-g am-g-fixed">
-            <h1 class="am-topbar-brand">
-                <a href="{:U('Index/index')}">SCULIFE</a>
-            </h1>
-
-            <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
-            <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
-                <ul class="am-nav am-nav-pills am-topbar-nav">
-                    <li><a href="{:U('Index/index')}">首页</a></li>
-                    <li class="am-dropdown" data-am-dropdown>
-                        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-                            青春川大 <span class="am-icon-caret-down"></span>
-                        </a>
-                        <ul class="am-dropdown-content">
-                            <li class="am-dropdown-header">请选择类别</li>
-                            <li><a href="{:U('Index/notice?tag=youth')}">公告</a></li>
-                            <li><a href="{:U('Index/news?tag=youth')}">团情快讯</a></li>
-                        </ul>
-                    </li>
-                    <li class="am-dropdown" data-am-dropdown>
-                        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-                            学工部 <span class="am-icon-caret-down"></span>
-                        </a>
-                        <ul class="am-dropdown-content">
-                            <li class="am-dropdown-header">请选择类别</li>
-                            <li><a href="{:U('Index/notice?tag=xsc')}">公告</a></li>
-                            <li><a href="{:U('Index/news?tag=xsc')}">新闻</a></li>
-                        </ul>
-                    </li>
+<nav class="teal lighten-2">
+    <div class="nav-wrapper container ">
+        <a href="{:U('Index/index')}" class="brand-logo waves-effect waves-light">SCULIFE</a>
+        <a href="#" data-activates="mobile" class="button-collapse"><img style="margin-top:0.7em; " src="__PUBLIC__/img/menu.png"></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="" href="{:U('Index/index')}">首页</a></li>
+            <volist name="category" id="vo">
+                <li><a class=" dropdown-button" href="#!" data-activates='dropdown{$vo.id}'>{$vo.name}</a></li>
+                <ul id='dropdown{$vo.id}' class='teal lighten-2 dropdown-content'>
+                   <volist name="vo['son']" id="v">
+                       <a class=" waves-effect waves-light" href="{:U('Index/articleList',array('tid'=>$v['id']))}">{$v.name}</a>
+                   </volist>
                 </ul>
-                <div class="am-topbar-right">
-                    <a href="{:U('Admin/index')}" class="am-btn am-topbar-btn am-btn-sm">进入后台</a>
-                </div>
-            </div>
-        </div>
-
+            </volist>
+            <li><a href="{:U('Admin/login')}">后台登陆</a></li>
+        </ul>
+        <ul class="teal lighten-2 side-nav" id="mobile">
+            <li><a class=" waves-effect waves-ligh  waves-effect waves-lightt" href="{:U('Index/index')}">首页</a></li>
+            <volist name="category" id="vo">
+                <li><a class=" waves-effect waves-light dropdown-button " href="#!" data-activates='dropdown2{$vo.id}'>{$vo.name}</a></li>
+                <ul id='dropdown2{$vo.id}' class='teal lighten-2 dropdown-content'>
+                    <volist name="vo['son']" id="v">
+                        <a class=" waves-effect waves-light" href="{:U('Index/articleList',array('tid'=>$v['id']))}">{$v.name}</a>
+                    </volist>
+                </ul>
+            </volist>
+            <li><a class=" waves-effect waves-light" href="{:U('Admin/login')}">后台登陆</a></li>
+        </ul>
     </div>
+</nav>
 
-
-</header>
 <!--header结束-->

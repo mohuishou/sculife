@@ -7,10 +7,9 @@ namespace Home\Controller;
 use Think\Controller;
 class ArticleController extends ArticleBaseController {
 
-    public function spiderArticle($category,$tag){
+    public function spiderArticle($tid){
         $handle=new HandleController();
-        if(!empty($category)) $map['category']=$category;
-        if(!empty($tag)) $map['tag']=$tag;
+        if(!empty($category)) $map['tid']=$tid;
         $config=$handle->getConfig($map);
        // print_r($config);
         foreach($config as $k => $v){

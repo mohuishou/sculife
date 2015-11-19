@@ -7,60 +7,27 @@
 namespace Home\Controller;
 use Think\Controller;
 class HandleController extends HandleBaseController {
-    public function getAllNews($tag){
-        $article=M('article');
-        if($tag=='youth'){
-            $youthNewsConfig=[
-                'map'=>[
-                    'tag'=>'青春川大',
-                    'category'=>'团情快讯'
-                ],
-                'limit'=>'15',
-                'getField'=>'id,tag,category,title,ctime'
-            ];
-            return $youthNews=$this->getAll($article,$youthNewsConfig);
+    public $son;
 
-        }elseif($tag=='xsc'){
-            $xscNewsConfig=[
-                'map'=>[
-                    'tag'=>'学工部',
-                    'category'=>'新闻'
-                ],
-                'limit'=>'15',
-                'getField'=>'id,tag,category,title,ctime'
-            ];
-
-            return $xscNews= $youthNews=$this->getAll($article,$xscNewsConfig);
-
+    public function getAllArticle($tid){
+        $this->getSon($this->allTag,$tid);
+        if(is_array($this->son['son'])){
+            foreach($this->son['son'] as $k=> $v){
+                $map['tid']=$v['id'];
+                $config['tag']=$v['name'];
+            }
+        }else{
+            $map['tid']=$this->son['id'];
+            $config['tag']=$this->son['name'];
         }
-    }
-
-    public function getAllNotice($tag){
         $article=M('article');
-        if($tag=='youth'){
-            $youthNoticeConfig=[
-                'map'=>[
-                    'tag'=>'青春川大',
-                    'category'=>'公告'
-                ],
-                'limit'=>'15',
-                'getField'=>'id,tag,category,title,ctime'
-            ];
-            return $youthNotice=$this->getAll($article,$youthNoticeConfig);
+        $config=[
+            'map'=>$map,
+            'limit'=>13,
+            'getField'=>'id,tid,title,ctime'
+        ];
 
-        }elseif($tag=='xsc'){
-            $xscNoticeConfig=[
-                'map'=>[
-                    'tag'=>'学工部',
-                    'category'=>'公告'
-                ],
-                'limit'=>'15',
-                'getField'=>'id,tag,category,title,ctime'
-            ];
-
-            return $xscNotice=$this->getAll($article,$xscNoticeConfig);
-
-        }
+        return $this->getAll($article,$config);
     }
 
     public function getAllLog(){
@@ -70,5 +37,16 @@ class HandleController extends HandleBaseController {
             'getField'=>'id,message,ctime'
         ];
         return $youthNotice=$this->getAll($log,$logConfig);
+    }
+    public function getSon($arr,$id){
+        if(is_array($arr)){
+            foreach($arr as $k => $v) {
+                if ($v['id'] != $id) {
+                    $this->getSon($v['son'], $id);
+                } else {
+                    $this->son=$v;
+                }
+            }
+        }
     }
 }

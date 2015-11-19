@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="container">
+        <div class="card-panel white">
+
+                <div class="card-content ">
+                    <h5 class="card-title">{$tag.0.name}</h5>
+                    <div class="collection">
+                        <volist name="list['list']" id="vo">
+                            <a href='{:U("Index/article",array("id"=>$vo["id"]))}' class="collection-item waves-effect waves-teal truncate">{$vo.title}</a>
+                        </volist>
+                    </div>
+                    <div class="card-action pagination">
+                    {$list.page}
+                    </div>
+                </div>
+
+        </div>
+
+
+    </div>
+</div>
+

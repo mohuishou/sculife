@@ -7,7 +7,7 @@
 	<title>login-sculife</title>
 	<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	-->
-	<link rel="stylesheet" type="text/css" href="/Match/sculife/Public/css/default.css">
+	<link rel="stylesheet" type="text/css" href="/Match/sculife-material/Public/css/default.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
 	<style type="text/css">
 	html,
@@ -75,7 +75,7 @@
 </div>
 
 <script type="text/javascript" src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/Match/sculife/Public/js/jquery.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="/Match/sculife-material/Public/js/jquery.min.js"><\/script>')</script>
 <!--materialize js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
 <script>
@@ -109,7 +109,7 @@
 
 			$.ajax({
 				type: "get", 
-				url: "/Match/sculife/index.php/Home/Admin/login",
+				url: "/Match/sculife-material/index.php/Home/Admin/login",
 				data: "username="+user+"&password="+pass+'&send=send',
 				dataType:"json",
 				beforeSend:function(){
@@ -119,7 +119,7 @@
 					// alert(msg);
 					if(msg.status==1){
 						$("#confirm").text(msg.message);
-						location.href ="/Match/sculife/index.php/Home/Admin/index";
+						location.href ="/Match/sculife-material/index.php/Home/Admin/index";
 					}else{
 						$('#confirm').css('background','#FF9999');
 						$("#confirm").text(msg.message);		

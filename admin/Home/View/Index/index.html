@@ -3,15 +3,15 @@
 	<include file="header" />
 	<php>if(I('id')||I('tag')){</php>
 	<php>}else{</php>
-	<include file="slider" />
+
 	<php>}</php>
 </block>
 
 <block name="main">
 	<php>if(I('id')){</php>
 		<include file="article" />
-	<php>}elseif(I('tag')){</php>
-		<include file="article-list" />
+	<php>}elseif(I('tid')){</php>
+		<include file="articleList" />
 	<php>}else{</php>
 		<include file="main" />
 	<php>}</php>

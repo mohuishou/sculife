@@ -7,6 +7,11 @@
 namespace Home\Controller;
 use Think\Controller;
 class HandleBaseController extends Controller {
+    public $tag=[];
+    public $allTag;
+    public function _initialize(){
+        $this->getALLTag();
+    }
 
     /**
      * 获取所有文章以及文章的分页显示
@@ -40,7 +45,13 @@ class HandleBaseController extends Controller {
      */
     public function getArticle($map,$limit){
         $article=M('article');
-        return $article->where($map)->limit($limit)->order('number DESC')->getField('id,title,category,tag,ctime');
+        $data=$article->where($map)->limit($limit)->order('number DESC')->getField('id,title,tid,ctime');
+        foreach($data as $k=>$v){
+            $this->tag='';
+            $this->getOneTag($v['tid']);
+            $data[$k]['tag']=$this->tag;
+        }
+        return $data;
     }
 
     /**
@@ -63,12 +74,15 @@ class HandleBaseController extends Controller {
     public function getConfig($map,$limit){
         $config=M('config');
         $data=$config->where($map)->order('id DESC')->limit($limit)->select();
+        /*------------------对pattern进行处理-----------------*/
         foreach($data as $k => $v){
+            $this->tag='';
+            $this->getOneTag($v['tid']);
+            $data[$k]['tag']=$this->tag;
             $pattern=explode('#',trim($v['pattern']));
             foreach($pattern as $key => $val){
                 $pattern[$key]=trim($val);
             }
-
 //            print_r($pattern);
             $data[$k]['pattern']=$pattern;
         }
@@ -76,12 +90,47 @@ class HandleBaseController extends Controller {
         return $data;
     }
 
-    public function getCategory($map,$limit){
-        $category=M('category');
-        $data=$category->where($map)->order('id DESC')->limit($limit)->select();
-        return $data;
+    /*-------根据id获取所有的父类，开销比较大，后面再改------------*/
+    public function getOneTag($id){
+        $tag1=M('tag');
+        $data=$tag1->where('id='.$id)->select();
+        $data=$data[0];
+        if($data['level']!=1){
+            $this->getOneTag($data['fid']);
+        }
+        $this->tag[]=$data;
     }
 
-  
+
+    public function getTag($map){
+        $tag1=M('tag');
+        return $data=$tag1->where($map)->select();
+    }
+
+    public function getALLTag(){
+        $tag1=M('tag');
+        $data=$tag1->where()->select();
+        $this->allTag=$tree=$this->genTree($data);
+    }
+
+    /*------------------树形话分类信息--------------------*/
+    public function genTree($items,$id='id',$pid='fid',$son = 'son'){
+        $tree = array(); //格式化的树
+        $tmpMap = array();  //临时扁平数据
+
+        foreach ($items as $item) {
+            $tmpMap[$item[$id]] = $item;
+        }
+
+        foreach ($items as $item) {
+            if (isset($tmpMap[$item[$pid]])) {
+                $tmpMap[$item[$pid]][$son][] = &$tmpMap[$item[$id]];
+            } else {
+                $tree[] = &$tmpMap[$item[$id]];
+            }
+        }
+        unset($tmpMap);
+        return $tree;
+    }
 
 }

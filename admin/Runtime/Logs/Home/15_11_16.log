@@ -1,0 +1,567 @@
+[ 2015-11-16T12:32:53+08:00 ] ::1 /Match/sculife/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0700s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' ORDER BY number DESC LIMIT 5   [ RunTime:0.0220s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` WHERE `tag` = '学工部' ORDER BY number DESC LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.180011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.180011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2015-11-16T12:32:58+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\AdminBaseController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-16T12:33:00+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/login?username=sculife&password=sculife123&send=send
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\AdminBaseController.class.php 第 46 行.
+
+[ 2015-11-16T12:33:00+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0590s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE ( tag="青春川大" ) LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE ( tag="学工部" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` ORDER BY number DESC LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `sculife_log` ORDER BY id DESC LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: tag F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Runtime\Cache\Home\b3df1f1550c580836b615d3c30efd302.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2015-11-16T12:33:02+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/systemConfig.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\AdminController.class.php on line 36 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 63 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\AdminController.class.php on line 36 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0570s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 65 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 65 行.
+SQL: SELECT * FROM `sculife_config` ORDER BY id DESC  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getCategory(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\AdminController.class.php on line 37 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 79 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getCategory(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\AdminController.class.php on line 37 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `sculife_category` [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 81 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 81 行.
+SQL: SELECT * FROM `sculife_category` ORDER BY id DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: system F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Runtime\Cache\Home\f26784ea447afa04cf25d9d432eaaa52.php 第 234 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-16T12:33:06+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/spider/tag/%E9%9D%92%E6%98%A5%E5%B7%9D%E5%A4%A7/category/%E5%9B%A2%E6%83%85%E5%BF%AB%E8%AE%AF.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleController.class.php on line 14 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 65 行.
+SQL: SELECT * FROM `sculife_config` WHERE `category` = '团情快讯' AND `tag` = '青春川大' ORDER BY id DESC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-16 12:33:06','青春川大','团情快讯','<div class=\"content-art\">
+			<h1>第六届“创维杯”职业生涯规划大赛启航学生职场路</h1>
+			<div class=\"attr\">
+				发布时间：2015-11-14 19:11:00  浏览次数：<script type=\"text/javascript\" src=\"/index.php/system/web/view/viewnumber/id/9330\"></script>
+			</div>
+			<div class=\"content-text\">
+				<div style=\"text-align: center\">
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 11月7日19:30，由共青团四川大学委员会和四川大学招生就业处主办的第六届&ldquo;创维杯&rdquo;职业生涯规划大赛总决赛于四川大学江安校区水上报告厅举办。本次大赛邀请到创维集团四川分公司天府办总经理江奋飞先生、创维集团四川分公司成都办总经理张一舟先生、创维集团四川分公司汪倩女士、万学教育集团西南区事业部总监卢晓静女士、实习僧联合创始人陈俊宇先生、四川大学招生就业处祁骁老师、四川大学团委张韵老师作为嘉宾。此外，四川大学优秀骨干、十佳社团、企业俱乐部等各大学生组织主要干部也应邀到场观看。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 在比赛现场也出现了两位外国</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">留学生</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">的身影，他们的出现引起了观众席中不小的骚动。他们为什么会来到现场？</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;他们是怎么知道这次比赛的呢</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">？</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">观众想必都迫切地想知道这些问题的答案</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">，</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">看来此次比赛的宣传力度着实不小</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">，赛制和内容也吸引了外国友人的眼球。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 首先，四川大学B&mdash;BOX协会为比赛带来精彩的开场秀，他们的精彩表现赢得了现场的阵阵掌声，点燃了全场的气氛。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 接下来</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">，创维集团四川分公司成都办总经理张一舟先生进行了致辞，张一舟经理对此次比赛给予了很高的评价，并对将要进行比赛的12强选手寄予了很高的期望。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 经过初赛职业生涯规划书比拼、复赛封闭式答辩，突破重围脱颖而出的12位优秀选手准备就绪，比赛在观众们热切期待的目光中拉开了帷幕。12名选手依次走上舞台进行自我介绍，短短的30秒，使现场的观众对他们有了初步了解。&ldquo;我要登上更广阔的平台，获得更好的深造机会。&rdquo;&ldquo;走上创业之路，是一次勇敢而义无返顾的冒险。&rdquo;他们这样说道。有一位选手用一首粤语歌开场引出自己的自我介绍，观众们在感叹歌声美的同时，也记住了这位选手，也让大家对选手接下里的精彩表现倍感期待。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 在第一环节&ldquo;锋芒初露&rdquo;中，选手们以各种生动的形式描绘着自己的职业生涯规划。形式多样，让人耳目一新。创新创业组的梁巧诗同学别出心裁，以视频形式展现自己的职业规划，在视频中向大家介绍了自己的创业项目及自己的职业生涯规划；</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">你见过以产品推销方式来讲解职业生涯规划的么？就业求职组的高鹏同学便是如此，他的语言诙谐幽默，以产品营销的方式向在座的各位推销自己，使本来单调的PPT展示变得极富趣味性；而学术深造组的陆铖同学将PPT展示与视频展示完美结合，中规中矩与幽默搞笑的语言风格并存，使在座的观众忍俊不禁。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 首战之后，评委老师进行了评分，席瑞、高鹏、张旭、陆铖、任婕、郝阳翰6位同学成功晋级。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 第二环节&ldquo;星光乍现&rdquo;随即开始。选手们上台依次抽取了与职业生涯规划有关的题目，经短暂准备后即兴演讲。选手们根据大屏幕上的问题进行即兴演讲，选手们的精彩演讲获得了评委老师的高度赞扬。在短短的30秒之内想好3分钟讲解的内容，并且流畅地讲出来，选手的才思敏捷让在座的观众惊叹</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 经过一番激烈的角逐，席瑞、陆铖、高鹏三名同学进入最后一轮，参与夺冠之战。第三环节&ldquo;一呼百应&rdquo;开始。三位选手充分利用短短一分钟的时间，再次向观众们展示了自己的职业生涯规划，说出了自己对比赛的感想和自己在比赛当中的所得。选手们的亲友团也为各自支持的选手们呐喊，将现场气氛推向高潮。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 选手拉票过后</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">，</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">现场观众进行投票</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">。</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">观众们都为自己喜欢的选手投下宝贵的一票</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 经评委与观众投票，&ldquo;创维杯&rdquo;职业生涯规划大赛的一等奖由学术深造组陆铖同学一举夺得任婕、二等奖由席瑞、高鹏同学获得，三等奖由郝阳翰、张旭同学、任婕同学获得。此外，最佳风采奖由薛晨雨同学获得，李璇同学荣获最佳创意奖，梁巧诗、陈雅真两名同学获得优秀奖，陈朕、王丽梅两名同学获得最佳辩手奖。</span></span><span style=\"font-size: 12pt\"><span style=\"color: rgb(0,0,0)\"><span style=\"font-family: 宋体\">为活跃气氛，本次大赛在进行过程中穿插了抽奖环节，使得本次大赛内容更加丰富精彩。</span></span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"color: rgb(0,0,0)\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 伴随着欢快的音乐，嘉宾上台为获奖选手颁奖。为了这一刻，他们付出了太多太多，有了这个瞬间，想必之前的辛苦都是值得的吧。</span></span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 颁奖过后</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">，</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">嘉宾与</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">12强选手进行了合影，第六届&ldquo;创维杯&ldquo;职业生涯规划大赛圆满落下帷幕。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;&nbsp;&nbsp; 此次大赛意在提供给我校学生一个认知自我的机会，使大家充分认识到及早明确目标的重要性。选手们在参赛过程中通过与彼此的交流亦相互促进，完善自我。提醒同学们唯有将目标详细规划、步步实现，最终才能实现事业的成功，这便是此次大赛所达成的效果，亦是高校学生进行职业生涯规划的意义之所在。对后期优秀选手，我们将进行跟进采访，敬请关注。</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div style=\"text-align: right\">
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">共青团四川大学委员会创业就业促进部&nbsp;</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">&nbsp;四川大学招生就业处</span></span></div>
+<div style=\"text-align: right\">
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 宋体\">2015年11月7日</span></span></div>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class=\"share\">','9330','第六届“创维杯”职业生涯规划大赛启航学生职场路','http://youth.scu.edu.cn/index.php/main/web/news-group/detail/i/9330') [ RunTime:0.3730s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0110s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯，最新消息抓取成功','2015-11-16 12:33:06') [ RunTime:0.1270s ]
+
+[ 2015-11-16T12:33:09+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE ( tag="青春川大" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE ( tag="学工部" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` ORDER BY number DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_log` ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: tag F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Runtime\Cache\Home\b3df1f1550c580836b615d3c30efd302.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-16T12:33:11+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/notice/tag/youth.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`tag`,`category`,`title`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-16T12:33:12+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/systemConfig.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\AdminController.class.php on line 36 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 63 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\AdminController.class.php on line 36 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 65 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 65 行.
+SQL: SELECT * FROM `sculife_config` ORDER BY id DESC  [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HandleBaseController::getCategory(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\AdminController.class.php on line 37 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 79 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getCategory(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\AdminController.class.php on line 37 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `sculife_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 81 行.
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 81 行.
+SQL: SELECT * FROM `sculife_category` ORDER BY id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: system F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Runtime\Cache\Home\f26784ea447afa04cf25d9d432eaaa52.php 第 234 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-16T12:33:16+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/spider.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: map F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleController.class.php 第 14 行.
+NOTIC: [2] Missing argument 2 for Home\Controller\HandleBaseController::getConfig(), called in F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\ArticleController.class.php on line 14 and defined F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `sculife_config` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: limit F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Home\Controller\HandleBaseController.class.php 第 65 行.
+SQL: SELECT * FROM `sculife_config` ORDER BY id DESC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0060s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-16 12:33:15','青春川大','公告','<div class=\"content-art\">
+			<h1>关于组织学生参加万达集团大学生创业计划的通知</h1>
+			<div class=\"attr\">
+				发布时间：2015-11-14 16:41:00  浏览次数：<script type=\"text/javascript\" src=\"/index.php/system/web/view/viewnumber/id/9327\"></script>
+			</div>
+			<div class=\"content-text\">
+				<div style=\"text-align: center\">
+	<span style=\"font-size: 18pt\"><span style=\"font-family: 宋体\">关于组织学生参加万达集团大学生创业计划的通知</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">全校同学：</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">&nbsp;&nbsp;&nbsp;&nbsp;为支持大学生创业，万达集团于2013年9月推出了支持大学生创业十年计划，即从2013年到2022年累计投入5亿元，提供约500个万达广场店铺，支持1000名大学生创业。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">&nbsp;&nbsp;&nbsp; 作为第一批申请高校，我校在2013年至2014年间共有六只团队申请成功，分别在广西南宁万达、成都金牛万达广场等成功入驻。</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">现将今年大学生创业计划相关事项通知如下：</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">一、申请资格</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">&nbsp;&nbsp;&nbsp; 申请人应当具有强烈的创业意愿，愿意承担创业风险，并同时满足以下全部条件：</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">1．申请人为四川大学2016年应届全日制本科毕业生；</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">2．申请人可以顺利取得毕业证、学位证；</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">3．在校期间无违法、违纪记录；</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">4．获得所在学校书面同意；</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">5．无不良信用记录。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">二、申请程序</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">1．时间安排：</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名时间：2015年11月3日&mdash;2015年11月1</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">8</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">日.</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校内答辩评审时间：2015年11月2</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">4</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">日暂定。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">2．申请人可先通过所在高校、万达集团官方网站或前程无忧网站了解万达集团大学生创业计划有关细则。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">3．申请人申请创业项目，原则上应以团队方式进行。每个创业团队原则上为2人。团队成员为合伙关系，就创业项目发生的债务共同对外承担连带责任。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">4．申请人按照要求完整填写《万达集团大学生创业计划申请表》（直接下载附件一或登录万达集团官网或者前程无忧网站</span></span><a href=\"http://campus.51job.com/wanda/introduce.htm\"><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">http://campus.51job.com/wanda/introduce.htm</span></span></a><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">）下载。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">5．将填写好的</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">电子版的</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">《万达集团大学生创业计划申请表》和项目策划书（店铺运营计划书）以&ldquo;申请人姓名+万达集团大学生创业计划&rdquo;形式命名发送到cychuangyeqingnian@163.com.</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">同时，请将已盖章的纸质版</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">《万达集团大学生创业计划申请表》</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">和一份纸质版项目策划书于截止日期前交至文华活动中心</span></span><span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">513办公室。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">6．申请人在填写申请表时，可选择万达集团推荐的创业项目品类，也可申报自主创业项目，同时根据万达广场铺位所在区位情况选择创业所在城市并明确是否服从分配。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">7．评审通过的申请人（下称&ldquo;候选人&rdquo;）名单将在其所在高校和万达集团官方网站公示。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">三、选拔标准</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">1．创业团队成员与创业能力相匹配的个人素质、创业意愿强烈程度、已开展创业实践相关度。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">2．店铺运营计划的盈利能力及店铺可持续经营能力。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">四、注意事项</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">1．候选人应在规定时间内与万达集团签订统一格式的创业扶持协议，明确各方权利义务。若候选人未按期签约的，万达集团有权取消候选人资格。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">2．候选人签订创业扶持协议后，应严格按协议约定执行创业计划，履行协议约定的各项义务。如候选人逾期不执行创业计划，或有其他违约情形，万达集团有权取消候选人资格，并按创业扶持协议相关约定处理。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">3．候选人创业自负盈亏。</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">五、咨询</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">活动网址：http://chuangye.wanda.cn/</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">咨询电话：400-650-7065</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">校方咨询人：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">校团委：张韵老师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：85401222</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;段一粟同学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18380226184</span></span></div>
+<div>
+	<a href=\"http://tuanwei.scu.edu.cn/index.php/zlwx/multiline/add/gid/附件一.doc\"><span style=\"font-size: 12pt\"><span style=\"color: rgb(0,0,255)\"><span style=\"font-family: 仿宋\">附件一：&nbsp;万达集团大学生创业计划申请表</span></span></span></a></div>
+<div>
+	<a href=\"http://tuanwei.scu.edu.cn/index.php/zlwx/multiline/add/gid/附件二.doc\"><span style=\"font-size: 12pt\"><span style=\"color: rgb(0,0,255)\"><span style=\"font-family: 仿宋\">附件二：2015年度拟支持大学生创业万达广场清单</span></span></span></a></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;共青团四川大学委员会</span></span></div>
+<div>
+	<span style=\"font-size: 12pt\"><span style=\"font-family: 仿宋\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二〇一五年十一月三日</span></span></div>
+<div>
+	&nbsp;</div>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class=\"share\">','9327','关于组织学生参加万达集团大学生创业计划的通知','http://youth.scu.edu.cn/index.php/main/web/notice/detail/i/9327') [ RunTime:0.0990s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0100s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大公告，最新消息抓取成功','2015-11-16 12:33:15') [ RunTime:0.0700s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '学工部' AND `category` = '公告' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sculife_article` (`ctime`,`tag`,`category`,`content`,`number`,`title`,`website`) VALUES ('2015-11-16 12:33:15','学工部','公告','<div id=\"DivContent\" align=\"left\"><p>
+	<span style=\"font-size:16px;\">各学院、各同学：</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 2015年9月以后全额垫付的四川大学校医院的门诊费用及本市转诊门诊费用（门诊特殊疾病、住院费用、狂犬报销不在此次报销时间内），同学们可根据本公告的时间安排结合自身具体情况，携带报销所需材料到校医院各点报销门诊费用。</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 需要材料：</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\"><strong>&nbsp; &nbsp; 1.</strong><strong>全额垫付的校医院门诊费用携带学生证或一卡通、发票即可。</strong></span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\"><strong>&nbsp; &nbsp; 2.</strong><strong>校外转诊需携带学生证或一卡通、转诊单、门诊病历、发票、处方、检查报告单，门诊药物销售清单（七医院就诊的在门诊咨询台打印；华西医院就诊的在门诊一楼D区35号窗口打印；其他医院在其门诊咨询台打印）。</strong></span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\"><strong>&nbsp; &nbsp; 3.</strong><strong>意外伤害者需另附学院开具的外伤调查证明，说明时间、地点、人物、事件经过，格式自拟（学院盖鲜章）。</strong></span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; （一）江安校区</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 报帐时间：2015年11月18日、11月19日、11月20日（周三、周四、周五）下午13：00-16:00</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 地点：江安校医院二楼中医诊断室。</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; （二）望江校区</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 报帐时间：2015年11月23日、11月24日、11月25日（周一、周二、周三）下午14:30-18:00</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 地点：望江医院三楼二会议室。</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; （二）华西校区</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 报帐时间： 2015年11月23日-25日（周一至周三）下午14:30-18:00</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 地点：望江医院三楼二会议室</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 如自身情况许可等待至12月底华西校区正常报账时间亦可。</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\"><strong>&nbsp; &nbsp; 备注：</strong><strong>三个校区12月底报帐时间将正常报帐，为避免拥挤，请同学合理安排时间自行选择时间前往报账，如自身情况许可等待至本月各校区正常报账时间亦可。 </strong></span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 医保办电话：85463353</span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 校医院网址：<a href=\"http://xyy.scu.edu.cn/\">http://xyy.scu.edu.cn/</a></span></p>
+<p align=\"left\">
+	&nbsp;</p>
+<p align=\"right\">
+	<span style=\"font-size:16px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2015年11月16日</span></p>
+<p align=\"right\">
+	<span style=\"font-size:16px;\">四川大学校医院</span></p>
+</div>
+                                                    </td>','4082','转发校医院关于2015年9月1日以后医保开通前门...','http://xsc.scu.edu.cn/News_Detail.aspx?article_ID=4082&menu_id=43'),('2015-11-16 12:33:15','学工部','公告','<div id=\"DivContent\" align=\"left\"><p>
+	<span style=\"font-size:16px;\">各学院、各同学：</span></p>
+<p>
+	<span style=\"font-size:16px;\">&nbsp;&nbsp;&nbsp; 2015-2016学年成都市城乡（大学生）基本医疗保险于今日全面开通。请住院和办理门特手续的同学持社保卡（社保卡同身份证一样，每人限用一张，已有社保卡的同学医保局不会重复发放）在尽快前往（11月底前）就诊医院办理相关出院及结算手续，以免耽误各医院年终财务总决算工作。</span></p>
+<p>
+	<span style=\"font-size:16px;\"><strong>&nbsp; &nbsp; 备注：目前未领到医保局下发的社保卡或自己遗失，又急需办理出院或门特的同学，请携带自己的身份证和入院证或门特手续，前往双流医保局制卡处补办。</strong></span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\"><strong>&nbsp; &nbsp; 双流医保局地址：可以在江安校区西南门乘坐</strong><strong>3A</strong><strong>公交车前往双流县社保局办事大厅</strong><strong>1</strong><strong>楼补办，具体柜台请现场咨询工作人员。</strong></span></p>
+<p align=\"left\">
+	<span style=\"font-size:16px;\"><strong>&nbsp; &nbsp; 另：社保卡内无可使用资金，不能用于药房购药。在四川大学校医院看病目前无需使用社保卡，但须持一卡通或学生证就医。</strong></span></p>
+<p>
+	<span style=\"font-size:16px;\"><strong>&nbsp; &nbsp; 请相互转告，谢谢！</strong></span></p>
+<p>
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 医保办电话：85463353</span></p>
+<p>
+	<span style=\"font-size:16px;\">&nbsp; &nbsp; 校医院网址：<a href=\"http://xyy.scu.edu.cn/\">http://xyy.scu.edu.cn/</a></span></p>
+<p align=\"left\">
+	&nbsp;</p>
+<p style=\"text-align: right;\">
+	<span style=\"font-size:16px;\"><strong>2015.11.16</strong></span></p>
+<p style=\"text-align: right;\">
+	<span style=\"font-size:16px;\"><strong>四川大学校医院</strong></span></p>
+</div>
+                                                    </td>','4081','转发校医院关于2015-2016学年成都市城乡（大...','http://xsc.scu.edu.cn/News_Detail.aspx?article_ID=4081&menu_id=43') [ RunTime:0.0770s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('学工部公告，最新消息抓取成功','2015-11-16 12:33:15') [ RunTime:0.0330s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '学工部' AND `category` = '新闻' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('学工部新闻,没有最新的消息','2015-11-16 12:33:16') [ RunTime:0.0320s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '团情快讯' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sculife_log` (`message`,`ctime`) VALUES ('青春川大团情快讯,没有最新的消息','2015-11-16 12:33:16') [ RunTime:0.0600s ]
+
+[ 2015-11-16T12:33:18+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE ( tag="青春川大" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MAX(number) AS tp_max FROM `sculife_article` WHERE ( tag="学工部" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`category`,`tag`,`ctime` FROM `sculife_article` ORDER BY number DESC LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sculife_log` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_log` ORDER BY id DESC LIMIT 5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: tag F:\SoftInstall\xampp\htdocs\Match\sculife\admin\Runtime\Cache\Home\b3df1f1550c580836b615d3c30efd302.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-16T12:33:23+08:00 ] ::1 /Match/sculife/index.php/Home/Admin/notice/tag/youth.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`tag`,`category`,`title`,`ctime` FROM `sculife_article` WHERE `tag` = '青春川大' AND `category` = '公告' ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-16T12:33:28+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/249.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=249 )  [ RunTime:0.0540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-16T12:35:30+08:00 ] ::1 /Match/sculife/index.php/Home/Index/article/id/249.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sculife_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sculife_article` WHERE ( id=249 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

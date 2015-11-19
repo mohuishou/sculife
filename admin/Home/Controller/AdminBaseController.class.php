@@ -25,7 +25,6 @@ class AdminBaseController extends Controller {
                 $this->display('login');
             }
         }else{
-            
             $this->display('login');
             exit();
         }
@@ -34,7 +33,7 @@ class AdminBaseController extends Controller {
     public function logout(){
         if($_SESSION['id']){
             unset($_SESSION['id']);
-            $this->login();
+            $this->display('login');
         } 
     }
 

@@ -1,34 +1,40 @@
-<div class="am-g am-g-fixed">
-	<div class="am-u-md-12 am-u-sm-12 am-u-sm-centered">
-		<article class="am-article">
-			<div class="am-article-hd">
-				<h1 class="article-title am-article-title">{$data.title}</h1>
-				<p class="am-article-meta">{$data.tag} {$data.category} {$data.ctime}</p>
+<div id="article">
+	<div class="row">
+		<div class="">
+			<div class="card-panel grey lighten-4">
+				<div class="  container">
+					<div class="card-content black-text">
+						<h5 class="card-title">{$data.title}</h5>
+						<p>{$data.tag} {$data.category} {$data.ctime}</p>
+						<div class="">{$data.content}</div>
+					</div>
+					<div class="card-action">
+
+					</div>
+					<!-- 多说评论框 start -->
+					<div class="ds-thread" data-thread-key="{$data.id}" data-title="{$data.title}"></div>
+					<!-- 多说评论框 end -->
+					<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+					<script type="text/javascript">
+						var duoshuoQuery = {short_name:"sculife"};
+						(function() {
+							var ds = document.createElement('script');
+							ds.type = 'text/javascript';ds.async = true;
+							ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+							ds.charset = 'UTF-8';
+							(document.getElementsByTagName('head')[0]
+							|| document.getElementsByTagName('body')[0]).appendChild(ds);
+						})();
+					</script>
+					<!-- 多说公共JS代码 end -->
+				</div>
+
 			</div>
 
-			<div class="am-article-bd">
-				<div class="article-body">{$data.content}</div>
-			</div>
 
-		</article>
-	</div>
-	<div class="am-u-md-12">
-		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="{$data.id}" data-title="{$data.title}"></div>
-		<!-- 多说评论框 end -->
-		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-		<script type="text/javascript">
-			var duoshuoQuery = {short_name:"sculife"};
-			(function() {
-				var ds = document.createElement('script');
-				ds.type = 'text/javascript';ds.async = true;
-				ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-				ds.charset = 'UTF-8';
-				(document.getElementsByTagName('head')[0]
-				|| document.getElementsByTagName('body')[0]).appendChild(ds);
-			})();
-		</script>
-		<!-- 多说公共JS代码 end -->
-
+		</div>
 	</div>
 </div>
+</div>
+
+

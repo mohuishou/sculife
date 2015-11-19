@@ -6,43 +6,40 @@
 namespace Home\Controller;
 use Think\Controller;
 class AdminController extends AdminBaseController {
-
+    public  $handle;
+    public function _initialize(){
+        parent::_initialize();
+        $this->handle=new HandleController();
+        $this->assign('side', $this->handle->allTag);
+    }
     public function index(){
-
-        $article=M('article');
-        $count['youth']=$article->where('tag="青春川大"')->max('number');
-        $count['xsc']=$article->where('tag="学工部"')->max('number');
-        $handle=new HandleController();
-        $someArticle=$handle->getArticle('',5);
-        $someLog=$handle->getLog('',5);
+         
+        $someArticle= $this->handle->getArticle('',5);
+        $someLog= $this->handle->getLog('',5);
         $this->assign('someLog',$someLog);
         $this->assign('someArticle',$someArticle);
-        $this->assign('count',$count);
         $this->display();
+
     }
 
-    public function notice($tag){
-        $handle=new HandleController();
-        $data=$handle->getAllNotice($tag);
-        $this->assign('des','公告');
+    public function Article($tid){
+        $data= $this->handle->getAllArticle($tid);
         $this->assign('list',$data['list']);
         $this->assign('page',$data['page']);
         $this->display('index');
-
     }
 
     public function systemConfig(){
-        $handle=new HandleController();
-        $config=$handle->getConfig();
-        $category=$handle->getCategory();
-        $this->assign('category',$category);
+         
+        $config= $this->handle->getConfig();
+        $this->assign('tag',$this->handle->allTag);
         $this->assign('config',$config);
         $this->display('system');
     }
 
     public function addConfig(){
-        $handle=new HandleController();
-        $category=$handle->getCategory();
+        $cate=M('category');
+        $category=$cate->getField('id,category');
         $this->ajaxReturn($category);
         // $User = M("User"); // 实例化User对象
         // // 根据表单提交的POST数据创建数据对象
@@ -55,23 +52,15 @@ class AdminController extends AdminBaseController {
         // }
     }
 
-    public function spider($tag='',$category=''){
+    public function spider(){
         $spider=new ArticleController();
-        $spider->spiderArticle($category,$tag);
+        $spider->spiderArticle();
     }
 
-    public function news($tag){
-        $handle=new HandleController();
-        $data=$handle->getAllNews($tag);
-        $this->assign('des','新闻');
-        $this->assign('list',$data['list']);
-        $this->assign('page',$data['page']);
-        $this->display('index');
-    }
 
     public function log(){
-        $handle=new HandleController();
-        $data=$handle->getAllLog();
+         
+        $data= $this->handle->getAllLog();
         $this->assign('list',$data['list']);
         $this->assign('page',$data['page']);
         $this->display('index');

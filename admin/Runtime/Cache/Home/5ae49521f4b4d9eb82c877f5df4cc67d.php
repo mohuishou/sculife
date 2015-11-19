@@ -11,215 +11,174 @@
       <meta name="mobile-web-app-capable" content="yes">
       <meta name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <link rel="stylesheet" href="/Match/sculife/Public/css/amazeui.min.css">
+      <link rel="stylesheet" href="/Match/sculife/Public/css/materialize.min.css">
+      <link rel="stylesheet" href="/Match/sculife/Public/css/materialize.icon.css">
       <link rel="stylesheet" href="/Match/sculife/Public/css/index.css">
       
   </head>
   <body>
-      <!--[if lte IE 9]>
-  <p class="browsehappy">
-    你正在使用 <strong>过时</strong>
-    的浏览器，SCULIFE 暂不支持。 请
-    <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
-    以获得更好的体验！
-  </p>
-  <![endif]-->
+
       
 	<!--header开始-->
-<header >
-    <div class="header  am-topbar">
-        <div class="am-g am-g-fixed">
-            <h1 class="am-topbar-brand">
-                <a href="<?php echo U('Index/index');?>">SCULIFE</a>
-            </h1>
-
-            <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
-            <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
-                <ul class="am-nav am-nav-pills am-topbar-nav">
-                    <li><a href="<?php echo U('Index/index');?>">首页</a></li>
-                    <li class="am-dropdown" data-am-dropdown>
-                        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-                            青春川大 <span class="am-icon-caret-down"></span>
-                        </a>
-                        <ul class="am-dropdown-content">
-                            <li class="am-dropdown-header">请选择类别</li>
-                            <li><a href="<?php echo U('Index/notice?tag=youth');?>">公告</a></li>
-                            <li><a href="<?php echo U('Index/news?tag=youth');?>">团情快讯</a></li>
-                        </ul>
-                    </li>
-                    <li class="am-dropdown" data-am-dropdown>
-                        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-                            学工部 <span class="am-icon-caret-down"></span>
-                        </a>
-                        <ul class="am-dropdown-content">
-                            <li class="am-dropdown-header">请选择类别</li>
-                            <li><a href="<?php echo U('Index/notice?tag=xsc');?>">公告</a></li>
-                            <li><a href="<?php echo U('Index/news?tag=xsc');?>">新闻</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="am-topbar-right">
-                    <a href="<?php echo U('Admin/index');?>" class="am-btn am-topbar-btn am-btn-sm">进入后台</a>
-                </div>
-            </div>
-        </div>
-
+<nav class="teal lighten-2">
+    <div class="nav-wrapper container ">
+        <a href="<?php echo U('Index/index');?>" class="brand-logo waves-effect waves-light">SCULIFE</a>
+        <a href="#" data-activates="mobile" class="button-collapse"><img style="margin-top:0.7em; " src="/Match/sculife/Public/img/menu.png"></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="" href="<?php echo U('Index/index');?>">首页</a></li>
+            <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a class=" dropdown-button" href="#!" data-activates='dropdown<?php echo ($vo["id"]); ?>'><?php echo ($vo["name"]); ?></a></li>
+                <ul id='dropdown<?php echo ($vo["id"]); ?>' class='teal lighten-2 dropdown-content'>
+                   <?php if(is_array($vo['son'])): $i = 0; $__LIST__ = $vo['son'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><a class=" waves-effect waves-light" href="<?php echo U('Index/articleList',array('tid'=>$v['id']));?>"><?php echo ($v["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                </ul><?php endforeach; endif; else: echo "" ;endif; ?>
+            <li><a href="<?php echo U('Admin/login');?>">后台登陆</a></li>
+        </ul>
+        <ul class="teal lighten-2 side-nav" id="mobile">
+            <li><a class=" waves-effect waves-ligh  waves-effect waves-lightt" href="<?php echo U('Index/index');?>">首页</a></li>
+            <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a class=" waves-effect waves-light dropdown-button " href="#!" data-activates='dropdown2<?php echo ($vo["id"]); ?>'><?php echo ($vo["name"]); ?></a></li>
+                <ul id='dropdown2<?php echo ($vo["id"]); ?>' class='teal lighten-2 dropdown-content'>
+                    <?php if(is_array($vo['son'])): $i = 0; $__LIST__ = $vo['son'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><a class=" waves-effect waves-light" href="<?php echo U('Index/articleList',array('tid'=>$v['id']));?>"><?php echo ($v["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                </ul><?php endforeach; endif; else: echo "" ;endif; ?>
+            <li><a class=" waves-effect waves-light" href="<?php echo U('Admin/login');?>">后台登陆</a></li>
+        </ul>
     </div>
+</nav>
 
-
-</header>
 <!--header结束-->
 	<?php if(I('id')||I('tag')){ ?>
 	<?php }else{ ?>
-	<!--slider开始-->
-<div class="slider ">
-    <div data-am-widget="slider" class="am-slider am-slider-c2" data-am-slider='{&quot;directionNav&quot;:false}' >
-        <ul class="am-slides">
-            <li>
-                <img src="/Match/sculife/Public/img/banner-1.jpg">
-                <div class="am-slider-desc">远方 有一个地方 那里种有我们的梦想</div>
-            </li>
-            <li>
-                <img src="/Match/sculife/Public/img/banner-2.jpg">
-                <div class="am-slider-desc">某天 也许会相遇 相遇在这个好地方</div>
-            </li>
-        </ul>
-    </div>
-</div>
-<!--slider结束-->
+
 	<?php } ?>
 
       
       
 	<?php if(I('id')){ ?>
-		<div class="am-g am-g-fixed">
-	<div class="am-u-md-12 am-u-sm-12 am-u-sm-centered">
-		<article class="am-article">
-			<div class="am-article-hd">
-				<h1 class="article-title am-article-title"><?php echo ($data["title"]); ?></h1>
-				<p class="am-article-meta"><?php echo ($data["tag"]); ?> <?php echo ($data["category"]); ?> <?php echo ($data["ctime"]); ?></p>
+		<div id="article">
+	<div class="row">
+		<div class="">
+			<div class="card-panel grey lighten-4">
+				<div class="  container">
+					<div class="card-content black-text">
+						<h5 class="card-title"><?php echo ($data["title"]); ?></h5>
+						<p><?php echo ($data["tag"]); ?> <?php echo ($data["category"]); ?> <?php echo ($data["ctime"]); ?></p>
+						<div class=""><?php echo ($data["content"]); ?></div>
+					</div>
+					<div class="card-action">
+
+					</div>
+					<!-- 多说评论框 start -->
+					<div class="ds-thread" data-thread-key="<?php echo ($data["id"]); ?>" data-title="<?php echo ($data["title"]); ?>"></div>
+					<!-- 多说评论框 end -->
+					<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+					<script type="text/javascript">
+						var duoshuoQuery = {short_name:"sculife"};
+						(function() {
+							var ds = document.createElement('script');
+							ds.type = 'text/javascript';ds.async = true;
+							ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+							ds.charset = 'UTF-8';
+							(document.getElementsByTagName('head')[0]
+							|| document.getElementsByTagName('body')[0]).appendChild(ds);
+						})();
+					</script>
+					<!-- 多说公共JS代码 end -->
+				</div>
+
 			</div>
 
-			<div class="am-article-bd">
-				<div class="article-body"><?php echo ($data["content"]); ?></div>
-			</div>
 
-		</article>
-	</div>
-	<div class="am-u-md-12">
-		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="<?php echo ($data["id"]); ?>" data-title="<?php echo ($data["title"]); ?>"></div>
-		<!-- 多说评论框 end -->
-		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-		<script type="text/javascript">
-			var duoshuoQuery = {short_name:"sculife"};
-			(function() {
-				var ds = document.createElement('script');
-				ds.type = 'text/javascript';ds.async = true;
-				ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-				ds.charset = 'UTF-8';
-				(document.getElementsByTagName('head')[0]
-				|| document.getElementsByTagName('body')[0]).appendChild(ds);
-			})();
-		</script>
-		<!-- 多说公共JS代码 end -->
-
+		</div>
 	</div>
 </div>
+</div>
 
-	<?php }elseif(I('tag')){ ?>
-		<div class="am-g am-g-fixed">
-    <div class="am-u-md-12">
-        <div class="am-panel am-panel-primary">
-            <div class="am-panel-hd"><?php echo ($tag); ?></div>
-            <div class="am-panel-bd">
-                <ul class="am-list">
-                    <?php if(is_array($list['list'])): $i = 0; $__LIST__ = $list['list'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li data-am-scrollspy="{animation:'scale-up',delay:'300'}">
-                            <a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>'><?php echo ($vo["title"]); ?></a>
-                            <div class="list-tag"><span class="am-icon-tag"></span><span><?php echo ($vo["category"]); ?></span></div>
-                        </li><?php endforeach; endif; else: echo "" ;endif; ?>
-                    <div id="table-page">
-                        <?php echo ($list["page"]); ?>
+
+
+	<?php }elseif(I('tid')){ ?>
+		<div class="row">
+    <div class="container">
+        <div class="card-panel white">
+
+                <div class="card-content ">
+                    <h5 class="card-title"><?php echo ($tag["0"]["name"]); ?></h5>
+                    <div class="collection">
+                        <?php if(is_array($list['list'])): $i = 0; $__LIST__ = $list['list'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="collection-item waves-effect waves-teal truncate"><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
                     </div>
+                    <div class="card-action pagination">
+                    <?php echo ($list["page"]); ?>
+                    </div>
+                </div>
 
-                </ul>
-            </div>
         </div>
+
+
     </div>
 </div>
+
+
 	<?php }else{ ?>
-		<div id="main" class="am-g am-g-fixed">
-    <div class="am-u-md-12">
-        <p class="am-text-center am-margin-top">在这里你可以看到最新最快的川大信息</p>
-    </div>
-    <!--选项卡开始-->
-    <div class="am-u-md-12">
-        <div data-am-widget="tabs"
-             class="am-tabs am-tabs-default"
-                >
-            <ul class="am-tabs-nav am-cf">
-                <li class="am-active"><a href="[data-tab-panel-0]">青春川大</a></li>
-                <li class=""><a href="[data-tab-panel-1]">学工部</a></li>
-                <li class=""><a href="[data-tab-panel-2]">教务处</a></li>
-            </ul>
-            <div class="am-tabs-bd">
-                <div data-tab-panel-0 class="am-tab-panel am-active">
-                    <ul class="am-list">
-                        <?php if(is_array($youth)): $i = 0; $__LIST__ = $youth;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li data-am-scrollspy="{animation:'scale-up',delay:'300'}">
-                                <a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>'><?php echo ($vo["title"]); ?></a>
-                                <div class="list-tag"><span class="am-icon-tag"></span><span><?php echo ($vo["category"]); ?></span></div>
-                            </li><?php endforeach; endif; else: echo "" ;endif; ?>
-                        <div style="text-align: right;margin-top:5px;">
-                            <a >更多:</a>
-                            <a class="am-btn am-btn-default" href="<?php echo U('Index/notice?tag=youth');?>">公告</a>
-                            <a class="am-btn am-btn-default" href="<?php echo U('Index/news?tag=youth');?>">团情快讯</a>
-                        </div>
-
-                    </ul>
-                </div>
-                <div data-tab-panel-1 class="am-tab-panel ">
-                    <ul class="am-list">
-                        <?php if(is_array($xsc)): $i = 0; $__LIST__ = $xsc;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li data-am-scrollspy="{animation:'scale-up',delay:'300'}">
-                                <a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>'><?php echo ($vo["title"]); ?></a>
-                                <div class="list-tag"><span class="am-icon-tag"></span><span><?php echo ($vo["category"]); ?></span></div>
-                            </li><?php endforeach; endif; else: echo "" ;endif; ?>
-
-                    </ul>
-                    <div style="text-align: right;margin-top:5px;">
-                        <a >更多:</a>
-                        <a class="am-btn am-btn-default" href="<?php echo U('Index/notice?tag=xsc');?>">公告</a>
-                        <a class="am-btn am-btn-default" href="<?php echo U('Index/news?tag=xsc');?>">新闻</a>
-                    </div>
-                </div>
-                <div data-tab-panel-2 class="am-tab-panel ">
-                    建设中。。。敬请期待
-                </div>
-            </div>
+		<div class="parallax-container">
+    <div class="parallax"><img src="/Match/sculife/Public/img/banner-1.jpg"></div>
+    <div class=""></div>
+</div>
+<div class="section white ">
+    <div class="row container">
+        <div class="col s12 m6">
+            <h2 class="header">SCULIFE公告牌</h2>
+            <p class="grey-text text-darken-3 lighten-3">这里有你能用到的全川大所有的官方公告，如果没有请<a class="main-a truncate hoverable waves-effect waves-teal" href="mailto:1@lailin.xyz">联系我们</a></p>
+        </div>
+        <div class="main-number col s12 m6">
+            <?php if(is_array($notice)): $i = 0; $__LIST__ = $notice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="main-a truncate hoverable "><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>
     </div>
-    <!--选项卡结束-->
 </div>
+<div class="parallax-container">
+    <div class="parallax"><img src="/Match/sculife/Public/img/banner-2.jpg"></div>
+</div>
+<div class="section white">
+    <div class="row container">
+        <div class="col s12 m6">
+            <h2 class="header">SCULIFE新闻榜</h2>
+            <p class="grey-text text-darken-3 lighten-3">这里有你想看到的全川大所有的官方新闻，如果没有请<a  class="main-a truncate hoverable waves-effect waves-teal"  href="mailto:1@lailin.xyz">联系我们</a></p>
+        </div>
+        <div class="main-number col s12 m6">
+            <?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="main-a truncate hoverable "><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+        </div>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax"><img src="/Match/sculife/Public/img/banner-3.jpg"></div>
+</div>
+
 	<?php } ?>
 
       
-		<footer>
-		<hr>
-		<p class="am-padding-left am-text-center">© 2015 SCULIFE.</p>
-	</footer>
-	<a href="#top"  data-am-smooth-scroll title="回到顶部" class="am-icon-btn am-icon-arrow-up am-active" id="go-top"></a>
-	<!--[if lt IE 9]>
-	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-	<script src="/Match/sculife/Public/js/amazeui.ie8polyfill.min.js"></script>
-	<![endif]-->
+	<footer class="page-footer teal lighten-2" style="margin:0;">
+	<div class="container">
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="white-text">SCULIFE</h5>
+				<p class="grey-text text-lighten-4">SCULIFE致力于打造川大官方通知公告，新闻资讯，活动预告等信息聚合平台，服务于喜欢参加比赛或者希望了解川大官方信息的同学或者是老师</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+				<h5 class="white-text">友情链接</h5>
+				<ul>
+					<li><a class="grey-text text-lighten-3" href="http://lxl520.com">LXL520</a></li>
+					<li><a class="grey-text text-lighten-3" href="http://fyscu.com">飞扬俱乐部</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			© 2015 Copyright SCULIFE
+			<a  class="grey-text text-lighten-4 right main-a truncate hoverable waves-effect waves-teal"  href="mailto:1@lailin.xyz">联系我们</a>
+		</div>
+	</div>
+</footer>
 
-	<!--[if (gte IE 9)|!(IE)]>
-	<!-->
 	<script src="/Match/sculife/Public/js/jquery.min.js"></script>
-	<!--<![endif]-->
-	<script src="/Match/sculife/Public/js/amazeui.min.js"></script>
-	<script src="/Match/sculife/Public/js/app.js"></script>
+	<script src="/Match/sculife/Public/js/materialize.min.js"></script>
+	<script src="/Match/sculife/Public/js/index.js"></script>
 
       
   </body>

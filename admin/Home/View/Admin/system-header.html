@@ -30,24 +30,10 @@
         </a>
     </li>
     <li>
-        <a data-am-modal="{target: '#spider',  width: 400, height: 225}" class="am-text-secondary">
+        <a url="__URL__/spider" data-am-modal="{target: '#spider',  width: 400, height: 225}" class="spider am-text-secondary">
             <span class="am-icon-btn am-icon-circle-o"></span>
             <br/>
-           手动抓取文章
+           手动抓取所有文章
         </a>
     </li>
 </ul>
-<div class="am-modal am-modal-no-btn" tabindex="-1" id="spider">
-    <div class="am-modal-dialog">
-        <div class="am-modal-hd">手动获取数据
-            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
-        </div>
-        <div class="am-modal-bd">
-        <!-- 注意这里别忘了添加$符号 -->
-            <volist name="category" id="vo">
-                <button class="spider am-btn am-btn-xs am-btn-primary" url="{:U('Admin/spider',array('tag'=>$vo['tag'],'category'=>$vo['category']))}" >{$vo.tag}{$vo.category}</button>
-            </volist>
-            <button class="spider am-btn am-btn-xs am-btn-success" url="{:U('Admin/spider')}">获取全部消息</button>
-        </div>
-    </div>
-</div>

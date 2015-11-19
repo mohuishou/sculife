@@ -11,8 +11,8 @@
       <meta name="mobile-web-app-capable" content="yes">
       <meta name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <link rel="stylesheet" href="/Match/sculife/Public/css/amazeui.min.css">
-      <link rel="stylesheet" href="/Match/sculife/Public/css/admin.css">
+      <link rel="stylesheet" href="/Match/sculife-material/Public/css/amazeui.min.css">
+      <link rel="stylesheet" href="/Match/sculife-material/Public/css/admin.css">
       
   </head>
   <body>
@@ -94,53 +94,27 @@
                     系统设置
                </a>
             </li>
+            <?php if(is_array($side)): $i = 0; $__LIST__ = $side;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+                    <a class="am-cf"  data-am-collapse="{target: '#notice-nav<?php echo ($vo["id"]); ?>'}">
+                        <span class="am-icon-file"></span>
+                        <?php echo ($vo["name"]); ?>
+                        <span class="am-icon-angle-right am-fr am-margin-right"></span>
+                    </a>
+                    <ul class="am-list am-collapse admin-sidebar-sub am-in" id="notice-nav<?php echo ($vo["id"]); ?>">
+                        <?php if(is_array($vo['son'])): $i = 0; $__LIST__ = $vo['son'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li>
+                                <a href="<?php echo U('Admin/article',array('tid'=>$v['id'],'action'=>'article'));?>" class="am-cf">
+                                    <span class="am-icon-file-text-o"></span>
+                                    <?php echo ($v["name"]); ?>
+                                </a>
+                            </li><?php endforeach; endif; else: echo "" ;endif; ?>
 
-            <li>
-                <a class="am-cf" data-am-collapse="{target: '#notice-nav'}">
-                    <span class="am-icon-file"></span>
-                    公告
-                    <span class="am-icon-angle-right am-fr am-margin-right"></span>
-                </a>
-                <ul class="am-list am-collapse admin-sidebar-sub am-in" id="notice-nav">
-                    <li>
-                        <a href="<?php echo U('Admin/notice?tag=youth');?>" class="am-cf">
-                            <span class="am-icon-file-text-o"></span>
-                            青春川大
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo U('Admin/notice?tag=xsc');?>">
-                            <span class="am-icon-pencil-square-o"></span>
-                            学工部
-                        </a>
-                    </li>
-                </ul>
-            </li>
+                    </ul>
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+
 
 
             <li>
-                <a class="am-cf" data-am-collapse="{target: '#news-nav'}">
-                    <span class="am-icon-file"></span>
-                   新闻
-                    <span class="am-icon-angle-right am-fr am-margin-right"></span>
-                </a>
-                <ul class="am-list am-collapse admin-sidebar-sub am-in" id="news-nav">
-                    <li>
-                        <a href="<?php echo U('Admin/news?tag=youth');?>" class="am-cf">
-                            <span class=" am-icon-file-text-o"></span>
-                            青春川大
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo U('Admin/news?tag=xsc');?>">
-                            <span class=" am-icon-pencil-square-o"></span>
-                            学工部
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="<?php echo U('Admin/log?tag=log');?>">
+                <a href="<?php echo U('Admin/log?action=log');?>">
                     <span class="am-icon-pencil-square-o"></span>
                     日志
                 </a>
@@ -175,49 +149,11 @@
     </div>
 </div>
 <!-- sidebar end -->
-	<?php switch($_GET['tag']): case "youth": ?><!-- content start -->
+	<?php switch($_GET['action']): case "article": ?><!-- content start -->
 <div class="admin-content">
 
     <div class="am-cf am-padding">
-        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg"><?php echo ($des); ?></strong> / <small>青春川大</small></div>
-    </div>
-
-    <div class="am-g">
-        <div class="am-u-md-12 am-scrollable-horizontal">
-            <table class="am-table am-text-nowrap  am-table-bordered am-table-radius am-table-hover am-table-centered">
-                <thead>
-                <tr>
-                    <th>选择</th>
-                    <th>编号</th>
-                    <th>标题</th>
-                    <th>来源</th>
-                    <th>分类</th>
-                    <th>创建时间</th>
-                    <th>操作</th>
-                </tr>
-                </thead>
-                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                        <td><input type="checkbox"></td>
-                        <td><?php echo ($i); ?></td>
-                        <td><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>'><?php echo ($vo["title"]); ?></a></td>
-                        <td><?php echo ($vo["tag"]); ?></td>
-                        <td><?php echo ($vo["category"]); ?></td>
-                        <td><?php echo ($vo["ctime"]); ?></td>
-                        <td><a class="am-text-danger" href="#">删除</a></td>
-                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-            </table>
-            <div id="table-page">
-                <?php echo ($page); ?>
-            </div>
-            <p></p>
-        </div>
-    </div>
-</div><?php break;?>
-		<?php case "xsc": ?><!-- content start -->
-<div class="admin-content">
-
-    <div class="am-cf am-padding">
-        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg"><?php echo ($des); ?></strong> / <small>学工部</small></div>
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg"><?php echo ($des); ?></strong> / <small>[sub]</small></div>
     </div>
 
     <div class="am-g">
@@ -356,8 +292,8 @@
 						<?php if(is_array($someArticle)): $i = 0; $__LIST__ = $someArticle;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 								<td><?php echo ($i); ?></td>
 								<td><?php echo ($vo["title"]); ?></td>
-								<td><?php echo ($vo["tag"]); ?></td>
-								<td><?php echo ($vo["category"]); ?></td>
+								<td><?php echo ($vo['tag']['1']['name']); ?></td>
+								<td><?php echo ($vo['tag']['0']['name']); ?></td>
 								<td><?php echo ($vo["ctime"]); ?></td>
 
 							</tr><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -405,15 +341,15 @@
 	<!--[if lt IE 9]>
 	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-	<script src="/Match/sculife/Public/js/amazeui.ie8polyfill.min.js"></script>
+	<script src="/Match/sculife-material/Public/js/amazeui.ie8polyfill.min.js"></script>
 	<![endif]-->
 
 	<!--[if (gte IE 9)|!(IE)]>
 	<!-->
-	<script src="/Match/sculife/Public/js/jquery.min.js"></script>
+	<script src="/Match/sculife-material/Public/js/jquery.min.js"></script>
 	<!--<![endif]-->
-	<script src="/Match/sculife/Public/js/amazeui.min.js"></script>
-	<script src="/Match/sculife/Public/js/app.js"></script>
+	<script src="/Match/sculife-material/Public/js/amazeui.min.js"></script>
+	<script src="/Match/sculife-material/Public/js/app.js"></script>
 
       
   </body>

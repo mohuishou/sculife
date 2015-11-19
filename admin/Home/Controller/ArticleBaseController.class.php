@@ -13,8 +13,7 @@ class ArticleBaseController extends Controller {
 	 * @param $config 配置信息：
 	 * 					mainSite => 需要采集的网站的主域名，包含http://
 	 *					url => 需要采集的网站的地址（采集级目录）
-	 * 					tag => 标签,如 青春川大，学工部
-	 * 					category => 分类，如：新闻，公告
+	 * 					tid=> 标签id,如 青春川大，学工部
 	 *					pattern => 第一次采集的时候的正则
 	 *					pattern2 => 采集子网址的正则
 	 * 					pattern3 => 详细页的路径转换,选填
@@ -22,19 +21,24 @@ class ArticleBaseController extends Controller {
 	public function grabAllArticle($config){
 		/*------------链接数据库-------------*/
 		$article=M('article');
-		$map['tag']=$config['tag'];
-		$map['category']=$config['category'];
+		$map['tid']=$config['tid'];
 		$maxNo=$article->where($map)->max('number');
 
 		/*------------------将数据保存到数据库-------------------*/
 		$data=$this->grabArticle($config,$maxNo);
+
+		$logMsg='';
+		foreach($config[tag] as $k => $v){
+			$logMsg .=$v['name'].'-';
+		}
+
 //        print_r($data);
 		if (count($data)) {
 			if($article->addAll($data)){
-				$this->writeLog($config['tag'].$config['category']."，最新消息抓取成功");
+				$this->writeLog($logMsg."最新消息抓取成功");
 			}
 		}else{
-			$this->writeLog($config['tag'].$config['category'].",没有最新的消息");
+			$this->writeLog($logMsg."没有最新的消息");
 		}
 	}
 
@@ -43,8 +47,7 @@ class ArticleBaseController extends Controller {
 	 * @param $config 配置信息：
 	 * 					mainSite => 需要采集的网站的主域名，包含http://
 	 *					url => 需要采集的网站的地址（采集级目录）
-	 * 					tag => 标签,如 青春川大，学工部
-	 * 					category => 分类，如：新闻，公告
+	 * 					tid => 标签id,如 青春川大，学工部
 	 *					pattern => 第一次采集的时候的正则
 	 *					pattern2 => 采集子网址的正则
 	 * 					pattern3 => 详细页的路径转换,选填
@@ -76,8 +79,7 @@ class ArticleBaseController extends Controller {
 					/*--------------将数据保存到数组中--------------*/
 					$data[]=[
 						'ctime'=>date('Y-m-d H:i:s',time()),
-						'tag'=>$config['tag'],
-						'category'=>$config['category'],
+						'tid'=>$config['tid'],
 						'content'=>$content,
 						'number'=>$catalog[2][$key],
 						'title'=>$catalog[3][$key],

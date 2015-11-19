@@ -7,14 +7,18 @@ namespace Home\Controller;
 use Think\Controller;
 
 class IndexController extends Controller{
-
+    public $handle;
+    public function _initialize(){
+        $this->handle=new HandleController();
+        $category=$this->handle->allTag;
+        $this->assign('category',$category);
+    }
     public function index(){
-        $handle=new HandleController();
-        $youth=$handle->getArticle(['tag'=>'青春川大'],5);
-        $xsc=$handle->getArticle(['tag'=>'学工部'],5);
-        $this->assign('youth',$youth);
-        $this->assign('xsc',$xsc);
-        $this->display();
+        $news=$this->handle->getArticle('tid=7 OR tid=4',5);
+        $notice=$this->handle->getArticle('tid=5 OR tid=6',5);
+        $this->assign('news',$news);
+        $this->assign('notice',$notice);
+        $this->display('index');
     }
 
     public function article($id){
@@ -24,34 +28,14 @@ class IndexController extends Controller{
         $this->assign('data',$data[0]);
         $this->display('index');
     }
-
-    public function notice($tag){
-        if($tag=="youth"){
-            $tags="青春川大";
-        }elseif($tag=='xsc'){
-            $tags="学工部";
-        }else{
-            $this->error('对不起，参数错误');
-        }
-        $handle=new HandleController();
-        $list=$handle->getAllNotice($tag);
-        $this->assign('tag',$tags);
+    public function articleList($tid){
+        $list=$this->handle->getAllArticle($tid);
+        $tag=$this->handle->getTag('id='.$tid);
+        $this->assign('tag',$tag);
         $this->assign('list',$list);
         $this->display('index');
     }
 
-    public function news($tag){
-        if($tag=="youth"){
-            $tags="青春川大";
-        }elseif($tag=='xsc'){
-            $tags="学工部";
-        }else{
-            $this->error('对不起，参数错误');
-        }
-        $handle=new HandleController();
-        $list=$handle->getAllNews($tag);
-        $this->assign('tag',$tags);
-        $this->assign('list',$list);
-        $this->display('index');
-    }
+
+
 }
