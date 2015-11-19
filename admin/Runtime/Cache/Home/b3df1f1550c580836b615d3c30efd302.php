@@ -11,8 +11,8 @@
       <meta name="mobile-web-app-capable" content="yes">
       <meta name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <link rel="stylesheet" href="/Match/sculife-material/Public/css/amazeui.min.css">
-      <link rel="stylesheet" href="/Match/sculife-material/Public/css/admin.css">
+      <link rel="stylesheet" href="/Match/sculife/Public/css/amazeui.min.css">
+      <link rel="stylesheet" href="/Match/sculife/Public/css/admin.css">
       
   </head>
   <body>
@@ -341,15 +341,15 @@
 	<!--[if lt IE 9]>
 	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-	<script src="/Match/sculife-material/Public/js/amazeui.ie8polyfill.min.js"></script>
+	<script src="/Match/sculife/Public/js/amazeui.ie8polyfill.min.js"></script>
 	<![endif]-->
 
 	<!--[if (gte IE 9)|!(IE)]>
 	<!-->
-	<script src="/Match/sculife-material/Public/js/jquery.min.js"></script>
+	<script src="/Match/sculife/Public/js/jquery.min.js"></script>
 	<!--<![endif]-->
-	<script src="/Match/sculife-material/Public/js/amazeui.min.js"></script>
-	<script src="/Match/sculife-material/Public/js/app.js"></script>
+	<script src="/Match/sculife/Public/js/amazeui.min.js"></script>
+	<script src="/Match/sculife/Public/js/app.js"></script>
 
       
   </body>

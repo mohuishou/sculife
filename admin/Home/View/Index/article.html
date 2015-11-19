@@ -5,7 +5,7 @@
 				<div class="  container">
 					<div class="card-content black-text">
 						<h5 class="card-title">{$data.title}</h5>
-						<p>{$data.tag} {$data.category} {$data.ctime}</p>
+						<a href="{$data.website}" class="btn waves-effect waves-teal" title="点击查看原网页"><volist name="data['tag']" id="vo">{$vo.name}/</volist>{$data.category} {$data.ctime}</a>
 						<div class="">{$data.content}</div>
 					</div>
 					<div class="card-action">

@@ -59,7 +59,7 @@
 				<div class="  container">
 					<div class="card-content black-text">
 						<h5 class="card-title"><?php echo ($data["title"]); ?></h5>
-						<p><?php echo ($data["tag"]); ?> <?php echo ($data["category"]); ?> <?php echo ($data["ctime"]); ?></p>
+						<a href="<?php echo ($data["website"]); ?>" class="btn waves-effect waves-teal" title="点击查看原网页"><?php if(is_array($data['tag'])): $i = 0; $__LIST__ = $data['tag'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; echo ($vo["name"]); ?>/<?php endforeach; endif; else: echo "" ;endif; echo ($data["category"]); ?> <?php echo ($data["ctime"]); ?></a>
 						<div class=""><?php echo ($data["content"]); ?></div>
 					</div>
 					<div class="card-action">
@@ -97,11 +97,10 @@
 		<div class="row">
     <div class="container">
         <div class="card-panel white">
-
                 <div class="card-content ">
                     <h5 class="card-title"><?php echo ($tag["0"]["name"]); ?></h5>
-                    <div class="collection">
-                        <?php if(is_array($list['list'])): $i = 0; $__LIST__ = $list['list'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="collection-item waves-effect waves-teal truncate"><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                    <div class="collection ">
+                        <?php if(is_array($list['list'])): $i = 0; $__LIST__ = $list['list'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="collection-item waves-effect waves-light truncate "><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
                     </div>
                     <div class="card-action pagination">
                     <?php echo ($list["page"]); ?>
@@ -175,7 +174,8 @@
 		</div>
 	</div>
 </footer>
-
+<!--返回顶部-->
+<button class="material-scrolltop" type="button"></button>
 	<script src="/Match/sculife/Public/js/jquery.min.js"></script>
 	<script src="/Match/sculife/Public/js/materialize.min.js"></script>
 	<script src="/Match/sculife/Public/js/index.js"></script>

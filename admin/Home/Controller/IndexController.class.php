@@ -24,8 +24,11 @@ class IndexController extends Controller{
     public function article($id){
         $article=M('article');
         $data=$article->where('id='.$id)->select();
-//        print_r($data);
-        $this->assign('data',$data[0]);
+        $data=$data[0];
+        $this->handle->tag='';
+        $this->handle->getOneTag($data['tid']);
+        $data['tag']=$this->handle->tag;
+        $this->assign('data',$data);
         $this->display('index');
     }
     public function articleList($tid){

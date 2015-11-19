@@ -11,10 +11,10 @@
       <meta name="mobile-web-app-capable" content="yes">
       <meta name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <link rel="stylesheet" href="/Match/sculife-material/Public/css/amazeui.min.css">
-      <link rel="stylesheet" href="/Match/sculife-material/Public/css/admin.css">
+      <link rel="stylesheet" href="/Match/sculife/Public/css/amazeui.min.css">
+      <link rel="stylesheet" href="/Match/sculife/Public/css/admin.css">
       
-    <link rel="stylesheet" type="text/css" href="/Match/sculife-material/Public/css/tooltip.css">
+    <link rel="stylesheet" type="text/css" href="/Match/sculife/Public/css/tooltip.css">
 
   </head>
   <body>
@@ -186,7 +186,7 @@
         </a>
     </li>
     <li>
-        <a url="/Match/sculife-material/index.php/Home/Admin/spider" data-am-modal="{target: '#spider',  width: 400, height: 225}" class="spider am-text-secondary">
+        <a url="/Match/sculife/index.php/Home/Admin/spider" data-am-modal="{target: '#spider',  width: 400, height: 225}" class="spider am-text-secondary">
             <span class="am-icon-btn am-icon-circle-o"></span>
             <br/>
            手动抓取所有文章
@@ -277,18 +277,18 @@
 	<!--[if lt IE 9]>
 	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-	<script src="/Match/sculife-material/Public/js/amazeui.ie8polyfill.min.js"></script>
+	<script src="/Match/sculife/Public/js/amazeui.ie8polyfill.min.js"></script>
 	<![endif]-->
 
 	<!--[if (gte IE 9)|!(IE)]>
 	<!-->
-	<script src="/Match/sculife-material/Public/js/jquery.min.js"></script>
+	<script src="/Match/sculife/Public/js/jquery.min.js"></script>
 	<!--<![endif]-->
-	<script src="/Match/sculife-material/Public/js/amazeui.min.js"></script>
-	<script src="/Match/sculife-material/Public/js/app.js"></script>
+	<script src="/Match/sculife/Public/js/amazeui.min.js"></script>
+	<script src="/Match/sculife/Public/js/app.js"></script>
 
       
-<script src="/Match/sculife-material/Public/js/tooltip.js"></script>
+<script src="/Match/sculife/Public/js/tooltip.js"></script>
  <script type="text/javascript">
     $(document).ready(function(){ 
       $("#addConfig").submit(function(){  //当提交的时候 ajax 验证完就停止
@@ -299,7 +299,7 @@
     });
 
     $('#category').focus(function(){
-      $.get("/Match/sculife-material/index.php/Home/Admin/addConfig",function(data,status){
+      $.get("/Match/sculife/index.php/Home/Admin/addConfig",function(data,status){
         
       });
     });
