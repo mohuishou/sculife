@@ -176,9 +176,10 @@
 </footer>
 <!--返回顶部-->
 <button class="material-scrolltop" type="button"></button>
-	<script src="/Match/sculife/Public/js/jquery.min.js"></script>
-	<script src="/Match/sculife/Public/js/materialize.min.js"></script>
-	<script src="/Match/sculife/Public/js/index.js"></script>
+<script src="/Match/sculife/Public/js/jquery.min.js"></script>
+<script src="/Match/sculife/Public/js/materialize.min.js"></script>
+<script src="/Match/sculife/Public/js/index.js"></script>
+
 
       
   </body>

@@ -1,16 +1,21 @@
 
 
 $(document).ready(function(){
+  /*-----------------初始化返回顶部按钮----------------------------------*/
   $('body').materialScrollTop();
+  /*-----------------初始化首页视觉差效果背景-----------------------*/
   $('.parallax').parallax();
+  /*-----------------初始化响应式导航栏----------------------*/
   $(".button-collapse").sideNav();
+  /*-----------------替换分页按钮效果----------------------*/
   $(".current").attr('class','active chip  teal lighten=2');
   $(".pagination a").attr('class',"waves-effect chip");
+  /*------------------替换默认的文章图片样式------------------*/
   $("#article img").attr({
     'style':"max-width:100%"
   });
-});
 
+});
 
 /**
  * 返回顶部
