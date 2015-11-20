@@ -113,41 +113,80 @@
     </div>
 </div>
 
-
 	<?php }else{ ?>
-		<div class="parallax-container">
-    <div class="parallax"><img src="/Match/sculife/Public/img/banner-1.jpg"></div>
-    <div class=""></div>
-</div>
-<div class="section white ">
-    <div class="row container">
-        <div class="col s12 m6">
-            <h2 class="header">SCULIFE公告牌</h2>
-            <p class="grey-text text-darken-3 lighten-3">这里有你能用到的全川大所有的官方公告，如果没有请<a class="main-a truncate hoverable waves-effect waves-teal" href="mailto:1@lailin.xyz">联系我们</a></p>
-        </div>
-        <div class="main-number col s12 m6">
-            <?php if(is_array($notice)): $i = 0; $__LIST__ = $notice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="main-a truncate hoverable "><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+		<!--pc端显示页面，对小屏用户隐藏并且不加载图片-->
+<span class="pc hide-on-small-only">
+    <div class="parallax-container hide-on-small-only">
+        <div class="parallax"><img src="/Match/sculife/Public/img/banner-1.jpg"></div>
+        <div class=""></div>
+    </div>
+    <div class="section white ">
+        <div class="row container">
+            <div class="col s12 m6">
+                <h2 class="header">SCULIFE公告牌</h2>
+                <p class="grey-text text-darken-3 lighten-3">这里有你能用到的全川大所有的官方公告，如果没有请<a class="main-a truncate hoverable waves-effect waves-teal" href="mailto:1@lailin.xyz">联系我们</a></p>
+            </div>
+            <div class="main-number col s12 m6">
+                <?php if(is_array($notice)): $i = 0; $__LIST__ = $notice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a  data-scroll-reveal="enter left and move 50px over 1.33s" href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="main-a truncate hoverable "><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
         </div>
     </div>
-</div>
-<div class="parallax-container">
-    <div class="parallax"><img src="/Match/sculife/Public/img/banner-2.jpg"></div>
-</div>
-<div class="section white">
-    <div class="row container">
-        <div class="col s12 m6">
-            <h2 class="header">SCULIFE新闻榜</h2>
-            <p class="grey-text text-darken-3 lighten-3">这里有你想看到的全川大所有的官方新闻，如果没有请<a  class="main-a truncate hoverable waves-effect waves-teal"  href="mailto:1@lailin.xyz">联系我们</a></p>
-        </div>
-        <div class="main-number col s12 m6">
-            <?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="main-a truncate hoverable "><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
-        </div>
-    </div>
-</div>
-<div class="parallax-container">
-    <div class="parallax"><img src="/Match/sculife/Public/img/banner-3.jpg"></div>
-</div>
 
+    <div class="parallax-container hide-on-small-only">
+        <div class="parallax"><img src="/Match/sculife/Public/img/banner-2.jpg"></div>
+    </div>
+
+    <div class="section white">
+        <div class="row container">
+            <div class="col s12 m6">
+                <h2 class="header">SCULIFE新闻榜</h2>
+                <p class="grey-text text-darken-3 lighten-3">这里有你想看到的全川大所有的官方新闻，如果没有请<a  class="main-a truncate hoverable waves-effect waves-teal"  href="mailto:1@lailin.xyz">联系我们</a></p>
+            </div>
+            <div class="main-number col s12 m6">
+                <?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="main-a truncate hoverable "><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container hide-on-small-only">
+        <div class="parallax"><img src="/Match/sculife/Public/img/banner-3.jpg"></div>
+    </div>
+</span>
+
+<!--手机等小屏幕显示页面，对大屏用户隐藏-->
+<span class="mobile hide-on-med-and-up">
+     <div class="row">
+         <div class="col s12 m7">
+             <div class="card">
+                 <div class="card-image">
+                     <img src="/Match/sculife/Public/img/mob-1.jpg">
+                     <div class="card-title">SCULIFE公告牌
+                         <p style="font-size:12px;margin: 0 auto;" class="text-small">这里有你能用到的全川大所有的官方公告</p>
+
+                     </div>
+                 </div>
+                 <div class="card-content">
+                     <?php if(is_array($notice)): $i = 0; $__LIST__ = $notice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a  data-scroll-reveal="enter left and move 50px over 1.33s" href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="main-a truncate hoverable "><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                 </div>
+             </div>
+         </div>
+         <div class="col s12 m7">
+             <div class="card">
+                 <div class="card-image">
+                     <img src="/Match/sculife/Public/img/mob-2.jpg">
+                     <div class="card-title">SCULIFE新闻榜
+                         <p  style="font-size:12px;margin: 0 auto;" class="text-small">这里有你能用到的全川大所有的官方新闻</p>
+
+                     </div>
+                 </div>
+                 <div class="card-content">
+                     <?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a  data-scroll-reveal="enter left and move 50px over 1.33s" href='<?php echo U("Index/article",array("id"=>$vo["id"]));?>' class="main-a truncate hoverable "><?php echo ($vo["title"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+</span>
 	<?php } ?>
 
       

@@ -5,7 +5,7 @@
             <div class="am-panel-bd">
                 <ul class="am-list">
                     <volist name="list['list']" id="vo">
-                        <li data-am-scrollspy="{animation:'scale-up',delay:'300'}">
+                        <li>
                             <a href='{:U("Index/article",array("id"=>$vo["id"]))}'>{$vo.title}</a>
                             <div class="list-tag"><span class="am-icon-tag"></span><span>{$vo.category}</span></div>
                         </li>
